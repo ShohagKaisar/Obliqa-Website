@@ -1,5 +1,7 @@
 import Header from "./component/Header/Header"
 import Hero from "./component/Hero/Hero"
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 
 function App() {

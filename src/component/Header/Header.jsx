@@ -1,226 +1,188 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
+import companyLogo from "../../assets/obloqa_logo.webp";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [mobileDropdown, setMobileDropdown] = useState(false);
+  const dropdownRef = useRef(null);
+
+  // Outside Click Hide Dropdown (Desktop)
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setDropdownOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-<>
-      {/* Contact Bar */}
-      <div className="lg:mx-32 max-sm:mx-3 px-3 rounded-[146px] mt-6 sticky z-10 bg-dark opacity-90">
-        <div className="flex justify-between">
-          {/* Address Section */}
-          <div className="texthsm max-sm:hidden flex justify-center items-center">
-            <i className="fa-solid fa-location-dot me-2" style={{ color: '#ffffff' }}></i>
-            <p style={{ color: '#ffffff' }}>House 38, Shah Makhdum Avenue, Sector 13, Uttara, Dhaka-1230</p>
-          </div>
+    <header className="bg-gray-700 z-50 text-white shadow-md fixed w-11/12 mx-auto rounded-full" style={{ top: "5%", left: "5%", right: "5%" }}>
+      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+        {/* Logo */}
+        <Link to="/">
+          <img src={companyLogo} alt="Company Logo" className="h-10" />
+        </Link>
 
-          {/* Email and Phone Section */}
-          <div className="flex justify-between lg:space-x-5">
-            {/* Email */}
-            <div className="texthsm me-2 flex justify-center items-center">
-              <i className="fa-regular fa-envelope me-2" style={{ color: '#ffffff' }}></i>
-              <p className="text-white">info@mapleitfirm.com</p>
-            </div>
+        {/* Desktop Menu */}
+        <nav className="hidden lg:flex space-x-6">
+          <Link to="/home" className="hover:text-gray-300">Home</Link>
+          <Link to="/about" className="hover:text-gray-300">About Obliqa</Link>
 
-            {/* Phone */}
-            <div className="texthsm flex justify-center items-center">
-              <i className="fa-solid fa-headset me-2" style={{ color: '#ffffff' }}></i>
-              <p style={{ color: '#ffffff' }}>+8801922557436</p>
-            </div>
-          </div>
-        </div>
-      </div>
+          {/* Services Dropdown (Desktop) */}
+          <div className="relative" ref={dropdownRef}>
+            <button
+              className="hover:text-gray-300 flex items-center"
+              onClick={() => setDropdownOpen(!dropdownOpen)}
+            >
+              Services <span className="ml-1">▼</span>
+            </button>
+            {dropdownOpen && (
+              <div className="absolute left-0 mt-2 w-[500px] bg-white text-black shadow-lg rounded-lg p-4 max-h-[400px] overflow-y-auto transition-opacity duration-200 ease-in">
+                <div className="grid grid-cols-2 gap-4">
+                  {/* Software Development */}
+                  <div>
+                    <h4 className="text-lg font-semibold mb-2">Software Development</h4>
+                    <ul className="space-y-1 text-sm">
+                      <li>ERP Software</li>
+                      <li>Project Management</li>
+                      <li>CRM Software</li>
+                      <li>HR Management</li>
+                      <li>Account & Finance</li>
+                      <li>Payroll Management</li>
+                      <li>Mobile Apps</li>
+                    </ul>
+                  </div>
 
-      {/* Header */}
-      <header className="lg:mx-24 bg-[#061E39] rounded-[146px] mt-[20px] sticky float-none top-4 z-10 header">
-        <nav>
-          <div className="navbar lg:px-8 justify-between">
-            {/* Logo and Mobile Menu */}
-            <div>
-              <div className="dropdown">
-                <div tabIndex="0" role="button" className="btn btn-ghost lg:hidden">
-                  <i className="fa-solid fa-bars fa-xl" style={{ color: '#ffffff' }}></i>
+                  {/* Website Development */}
+                  <div>
+                    <h4 className="text-lg font-semibold mb-2">Website Development</h4>
+                    <ul className="space-y-1 text-sm">
+                      <li>Website Development</li>
+                      <li>Website Maintenance</li>
+                      <li>Website Speed Optimization</li>
+                      <li>Security Services</li>
+                      <li>Analytics & Tracking</li>
+                    </ul>
+                  </div>
+
+                  {/* Digital Marketing */}
+                  <div>
+                    <h4 className="text-lg font-semibold mb-2">Digital Marketing</h4>
+                    <ul className="space-y-1 text-sm">
+                      <li>SEO</li>
+                      <li>Social Media Marketing</li>
+                      <li>PPC Advertising</li>
+                      <li>Email Marketing</li>
+                      <li>Lead Generation</li>
+                    </ul>
+                  </div>
+
+                  {/* Creative Content */}
+                  <div>
+                    <h4 className="text-lg font-semibold mb-2">Creative Content</h4>
+                    <ul className="space-y-1 text-sm">
+                      <li>Content Writing</li>
+                      <li>Video Production</li>
+                    </ul>
+                  </div>
+
+                  {/* Creative Design */}
+                  <div>
+                    <h4 className="text-lg font-semibold mb-2">Creative Design</h4>
+                    <ul className="space-y-1 text-sm">
+                      <li>UI/UX Design</li>
+                      <li>Graphic Design</li>
+                      <li>Motion Graphic Design</li>
+                    </ul>
+                  </div>
                 </div>
-                <ul
-                  tabIndex="0"
-                  className="menu overflow-y-auto menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-                >
-                  <li>
-                    <a href="/">Home</a>
-                  </li>
-                  <li>
-                    <a href="/about-mssl">About MSSL</a>
-                  </li>
-                  <li className="flex">
-                    <a href="">
-                      Services <i className="ms-1 fa-solid fa-caret-down fa-lg" style={{ color: '#0c0404' }}></i>
-                    </a>
-                  </li>
-                  {/* <MobileMenu /> */}
-                  <li>
-                    <a href="/career">Careers</a>
-                  </li>
-                  <li>
-                    <a href="/blog">Blog</a>
-                  </li>
-                  <li>
-                    <a href="/contact-us">Contact</a>
-                  </li>
-                </ul>
               </div>
-              <a href="/">
-                <img src="/assets/logo.png" alt="Logo" className="h-[60px]" />
-              </a>
-            </div>
-
-            {/* Desktop Menu */}
-            <div className="lg:block hidden">
-              <ul className="flex text-medium text-white space-x-6">
-                <li className="transform transition-transform duration-300 hover:scale-110">
-                  <a href="/">Home</a>
-                </li>
-                <li className="transform transition-transform duration-300 hover:scale-110">
-                  <a href="/about-mssl">About MSSL</a>
-                </li>
-                <li className="transform transition-transform duration-300 hover:scale-110">
-                  <button className="flex items-center justify-center" id="servicebtn" onClick={() => {}}>
-                    Services
-                    <i className="ms-1 fa-solid fa-caret-down fa-lg" style={{ color: '#ffffff' }}></i>
-                  </button>
-                </li>
-                <li className="transform transition-transform duration-300 hover:scale-110">
-                  <a href="/career">Careers</a>
-                </li>
-                <li className="transform transition-transform duration-300 hover:scale-110">
-                  <a href="/blog">Blog</a>
-                </li>
-                <li className="transform transition-transform duration-300 hover:scale-110">
-                  <a href="/contact-us">Contact</a>
-                </li>
-              </ul>
-            </div>
-
-            {/* Request a Call Back Button */}
-            <div>
-              <a className="btn rounded-[146px] btn-info to-purple-700btn-neutral z-10 pp2">
-                Request a Call Back
-              </a>
-            </div>
+            )}
           </div>
+
+          <Link to="/career" className="hover:text-gray-300">Career</Link>
+          <Link to="/blog" className="hover:text-gray-300">Blog</Link>
+          <Link to="/contact" className="hover:text-gray-300">Contact Us</Link>
         </nav>
 
-        {/* Services Dropdown Menu */}
-        <div className="flex justify-center hidden overflow" id="bigmenu">
-          <ul className="menu xl:menu-horizontal z-0 text-black bg-[#ffffff] absolute rounded-box lg:min-w-max">
-            <li>
-              <a className="text-xl text-medium">Software Development</a>
-              <ul>
-                <li>
-                  <a>ERP Software</a>
-                </li>
-                <li>
-                  <a>Project Management</a>
-                </li>
-                <li>
-                  <a>CRM Software</a>
-                </li>
-                <li>
-                  <a>HR Management</a>
-                </li>
-                <li>
-                  <a>Account & Finance</a>
-                </li>
-                <li>
-                  <a>Payroll Management</a>
-                </li>
-                <li>
-                  <a>Mobile Apps</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a className="text-xl text-medium">Website Development</a>
-              <ul>
-                <li>
-                  <a href="/web-development">Website Development</a>
-                </li>
-                <li>
-                  <a>Website Maintenance</a>
-                </li>
-                <li>
-                  <a>Website Speed Optimization</a>
-                </li>
-                <li>
-                  <a>Website Training & Documentation</a>
-                </li>
-                <li>
-                  <a>Security Services</a>
-                </li>
-                <li>
-                  <a>Analytics & Tracking</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a className="text-xl text-medium">Digital Marketing</a>
-              <ul>
-                <li>
-                  <a>Search Engine Optimization (SEO)</a>
-                </li>
-                <li>
-                  <a>Social Media Marketing (SMM)</a>
-                </li>
-                <li>
-                  <a>Influencer Marketing</a>
-                </li>
-                <li>
-                  <a>PPC (Pay-Per-Click) Advertising</a>
-                </li>
-                <li>
-                  <a>Email Marketing</a>
-                </li>
-                <li>
-                  <a>Lead Generation Service</a>
-                </li>
-                <li>
-                  <a>Video Marketing (YouTube, TikTok, etc.)</a>
-                </li>
-                <li>
-                  <a>Influencer Marketing</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a className="text-xl text-medium">Creative Content</a>
-              <ul>
-                <li>
-                  <a>Content Writing</a>
-                </li>
-                <li>
-                  <a>Social Media Content</a>
-                </li>
-                <li>
-                  <a>Video Production & Editing</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a className="text-xl text-medium">Creative Design</a>
-              <ul>
-                <li>
-                  <a>UI/UX Design</a>
-                </li>
-                <li>
-                  <a>Graphic Design</a>
-                </li>
-                <li>
-                  <a>Motion Graphic Design</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+        {/* Contact Button (Desktop) */}
+        <Link to="/contact" className="hidden lg:block bg-blue-500 px-4 py-2 rounded-md hover:bg-blue-600">
+          Get in Touch
+        </Link>
+
+        {/* Mobile Menu Button */}
+        <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="lg:hidden bg-gray-800 text-white p-4 space-y-3">
+          <Link to="/home" className="block py-2">Home</Link>
+          <Link to="/about" className="block py-2">About Obliqa</Link>
+
+          {/* Services Dropdown (Mobile) */}
+          <div className="py-2">
+            <button
+              className="w-full text-left font-semibold py-2 hover:text-gray-400"
+              onClick={() => setMobileDropdown(!mobileDropdown)}
+            >
+              Services ▼
+            </button>
+            {mobileDropdown && (
+              <div className="ml-4 text-sm space-y-2">
+                <h4 className="text-lg font-semibold">Software Development</h4>
+                <ul>
+                  <li>ERP Software</li>
+                  <li>Project Management</li>
+                  <li>CRM Software</li>
+                  <li>HR Management</li>
+                </ul>
+
+                <h4 className="text-lg font-semibold mt-3">Website Development</h4>
+                <ul>
+                  <li>Website Development</li>
+                  <li>Website Maintenance</li>
+                  <li>Security Services</li>
+                </ul>
+
+                <h4 className="text-lg font-semibold mt-3">Digital Marketing</h4>
+                <ul>
+                  <li>SEO</li>
+                  <li>Social Media Marketing</li>
+                  <li>Email Marketing</li>
+                </ul>
+
+                <h4 className="text-lg font-semibold mt-3">Creative Content</h4>
+                <ul>
+                  <li>Content Writing</li>
+                  <li>Video Production</li>
+                </ul>
+
+                <h4 className="text-lg font-semibold mt-3">Creative Design</h4>
+                <ul>
+                  <li>UI/UX Design</li>
+                  <li>Graphic Design</li>
+                </ul>
+              </div>
+            )}
+          </div>
+
+          <Link to="/career" className="block py-2">Career</Link>
+          <Link to="/blog" className="block py-2">Blog</Link>
+          <Link to="/contact" className="block py-2">Contact Us</Link>
         </div>
-      </header>
-    </>
+      )}
+    </header>
   );
-}
+};
 
 export default Header;
