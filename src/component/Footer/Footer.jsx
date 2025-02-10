@@ -1,4 +1,4 @@
-import companyLogo from "../../assets/OBLIQA-footer.png";
+import companyLogo from "../../assets/OBLIQA.png";
 
 const Footer = () => {
   return (

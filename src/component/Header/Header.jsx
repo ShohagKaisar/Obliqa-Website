@@ -23,8 +23,8 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="bg-white z-50 text-white shadow-md fixed w-11/12 mx-auto rounded-full" style={{ top: "5%", left: "5%", right: "5%" }}>
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+    <header className="bg-white/20 backdrop-blur-md z-50 text-white shadow-md fixed w-11/12 mx-auto rounded-full" style={{ top: "5%", left: "5%", right: "5%" }}>
+      <div className=" mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <Link to="/">
           <img src={companyLogo} alt="Company Logo" className="h-10" />
@@ -80,7 +80,6 @@ const Header = () => {
                       <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Graphic Design</li>
                     </ul>
                   </div>
-
                 </div>
               </div>
             )}
