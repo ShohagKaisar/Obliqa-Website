@@ -6,7 +6,8 @@ const Hero = () => {
   return (
     <div>
       <div className="relative min-h-screen -mt-[100px] bg-dark opacity-95 z-0">
-        <Video videoSrc={video}></Video>
+        {/* Call the Vodeo Component for background Video */}
+        <Video videoSrc={video}></Video> 
         <div className="bg-opacity-60"></div>
         <div className="relative text-neutral-content text-center mt-24 z-10">
           {/* <div className="banner-text animate_animated animate_fadeIn z-10 mt-24">

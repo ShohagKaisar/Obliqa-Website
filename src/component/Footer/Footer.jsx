@@ -79,7 +79,7 @@ const Footer = () => {
                 Address:{" "}
               </span>
               <br />
-              House-56/B, Block-B, Word-39, Gazipur, Dhaka, Bangladesh
+              Gazipur, Dhaka, Bangladesh
             </p>
             <p className="text-gray-300">
               <span className="font-medium text-white">

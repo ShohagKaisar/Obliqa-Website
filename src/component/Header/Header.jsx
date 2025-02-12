@@ -23,7 +23,11 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="bg-white/20 backdrop-blur-md z-50 text-white shadow-md fixed w-11/12 mx-auto rounded-full" style={{ top: "5%", left: "5%", right: "5%" }}>
+    <header
+      className={`${isOpen ? "bg-white/20 backdrop-blur-md shadow-md rounded-none" : "bg-white/20 backdrop-blur-md"
+        } fixed z-50 text-white w-11/12 mx-auto transition-all duration-300  lg:rounded-full`}
+      style={{ top: "5%", left: "4.15%", right: "5%" }}
+    >
       <div className=" mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <Link to="/">
@@ -41,48 +45,109 @@ const Header = () => {
               className="hover:text-[#EC8314] flex items-center transition-all duration-200 ease-in-out"
               onClick={() => setDropdownOpen(!dropdownOpen)}
             >
-              Services <span className="ml-1 transition-transform group-hover:rotate-180">▼</span>
+              Services <span className="ml-1">▼</span>
             </button>
 
-            {dropdownOpen && (
-              <div className="absolute left-0 mt-2 w-[500px] bg-white text-black shadow-lg rounded-lg p-4 max-h-[400px] overflow-y-auto 
-      opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 ease-in-out">
-                <div className="grid grid-cols-2 gap-4">
+            <div
+              className={`absolute left-0 mt-2 w-[600px] text-white shadow-lg rounded-lg p-4 max-h-[400px] overflow-y-auto 
+  bg-[#1E3F62] scale-95 transition-all duration-300 ease-in-out ${dropdownOpen ? "block opacity-100 scale-100" : "hidden opacity-0 scale-95"
+                }`}
+            >
+              <div className="grid grid-cols-2 gap-4">
+                {/* Website Development */}
+                <div className="border-r-4 border-gray-600 pr-6">
+                  <h4 className="text-lg font-semibold mb-2">Website Development</h4>
+                  <ul className="space-y-1 text-sm list-disc pl-6">
+                    <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
+                      Full-Stack Web Application Development
+                    </li>
+                    <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
+                      Custom API Development (Node.js, Express.js)
+                    </li>
+                    <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
+                      Database Management
+                    </li>
+                    <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
+                      Frontend Development (React.js, Tailwind CSS, Bootstrap)
+                    </li>
+                    <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
+                      Authentication & Authorization
+                    </li>
+                    <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
+                      Performance Optimization
+                    </li>
+                    <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
+                      Deployment & Hosting
+                    </li>
+                    <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
+                      E-commerce Development
+                    </li>
+                    <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
+                      Website Speed Optimization
+                    </li>
+                    <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
+                      SEO Optimization for WordPress
+                    </li>
+                    <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
+                      WordPress Security & Maintenance
+                    </li>
+                    <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
+                      Migration & Backup Solutions
+                    </li>
+                    <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
+                      Custom Landing Pages
+                    </li>
+                    <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
+                      Responsive Web Design (Mobile-Friendly)
+                    </li>
+                    <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
+                      Website Redesign & Revamp
+                    </li>
+                    <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
+                      CMS Integration
+                    </li>
+                    <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
+                      Third-Party API Integration
+                    </li>
+                    <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
+                      Web Performance Optimization
+                    </li>
+                  </ul>
+                </div>
 
-                  {/* Website Development */}
-                  <div>
-                    <h4 className="text-lg font-semibold mb-2">Website Development</h4>
-                    <ul className="space-y-1 text-sm">
-                      <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Website Development</li>
-                      <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Website Maintenance</li>
-                      <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Website Speed Optimization</li>
-                      <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Security Services</li>
-                      <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Analytics & Tracking</li>
-                    </ul>
-                  </div>
-
-                  {/* Digital Marketing */}
-                  <div>
-                    <h4 className="text-lg font-semibold mb-2">Digital Marketing</h4>
-                    <ul className="space-y-1 text-sm">
-                      <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Search Engine Optimization (SEO)</li>
-                      <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Social Media Marketing</li>
-                      <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Facebook Boosting / Ad Management</li>
-                      <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Content Marketing</li>
-                    </ul>
-                  </div>
-
+                {/* Digital Marketing */}
+                <div>
+                  <h4 className="text-lg font-semibold mb-2">Digital Marketing</h4>
+                  <ul className="space-y-1 text-sm list-disc pl-6">
+                    <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
+                      Search Engine Optimization (SEO)
+                    </li>
+                    <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
+                      Social Media Marketing
+                    </li>
+                    <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
+                      Facebook Boosting / Ad Management
+                    </li>
+                    <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
+                      Content Marketing
+                    </li>
+                  </ul>
                   {/* Creative Design */}
                   <div>
-                    <h4 className="text-lg font-semibold mb-2">Creative Design</h4>
-                    <ul className="space-y-1 text-sm">
-                      <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Logo Design</li>
-                      <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Graphic Design</li>
+                    <h4 className="text-lg font-semibold mb-2 mt-8">Creative Design</h4>
+                    <ul className="space-y-1 text-sm list-disc pl-6">
+                      <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
+                        Logo Design
+                      </li>
+                      <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
+                        Graphic Design
+                      </li>
                     </ul>
                   </div>
                 </div>
               </div>
-            )}
+            </div>
+
           </div>
 
 
@@ -109,7 +174,7 @@ const Header = () => {
           <Link to="/about" className="block py-2">About Obliqa</Link>
 
           {/* Services Dropdown (Mobile) */}
-          <div className="py-2">
+          <div className="py-2 max-h-[60vh] overflow-y-auto">
             <button
               className="w-full text-left font-semibold py-2 hover:text-gray-400"
               onClick={() => setMobileDropdown(!mobileDropdown)}
@@ -118,42 +183,56 @@ const Header = () => {
             </button>
             {mobileDropdown && (
               <div className="ml-4 text-sm space-y-2">
-                <h4 className="text-lg font-semibold">Software Development</h4>
-                <ul>
-                  <li>ERP Software</li>
-                  <li>Project Management</li>
-                  <li>CRM Software</li>
-                  <li>HR Management</li>
+                <h4 className="text-lg font-semibold mt-3">
+                  Website Development
+                </h4>
+                <ul className="list-disc pl-6 space-y-1 text-sm">
+                  <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Full-Stack Web Application Development</li>
+                  <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Custom API Development (Node.js, Express.js)</li>
+                  <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Database Management</li>
+                  <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Frontend Development (React.js, Tailwind CSS, Bootstrap)</li>
+                  <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Authentication & Authorization</li>
+                  <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Performance Optimization</li>
+                  <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Deployment & Hosting</li>
+                  <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">E-commerce Development</li>
+                  <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Website Development</li>
+                  <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Website Maintenance</li>
+                  <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Website Speed Optimization</li>
+                  <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">SEO Optimization for WordPress</li>
+                  <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">WordPress Security & Maintenance</li>
+                  <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Migration & Backup Solutions</li>
+                  <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Custom Landing Pages</li>
+                  <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Responsive Web Design (Mobile-Friendly)</li>
+                  <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Website Redesign & Revamp</li>
+                  <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">CMS Integration</li>
+                  <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Third-Party API Integration</li>
+                  <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Web Performance Optimization</li>
+                  <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Security Services</li>
+                  <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">Analytics & Tracking</li>
                 </ul>
 
-                <h4 className="text-lg font-semibold mt-3">Website Development</h4>
-                <ul>
-                  <li>Website Development</li>
-                  <li>Website Maintenance</li>
-                  <li>Security Services</li>
-                </ul>
 
-                <h4 className="text-lg font-semibold mt-3">Digital Marketing</h4>
-                <ul>
-                  <li>SEO</li>
+                <h4 className="text-lg font-semibold mt-3 ">
+                  Digital Marketing
+                </h4>
+                <ul className="list-disc pl-6">
+                  <li>Search Engine Optimization (SEO)</li>
                   <li>Social Media Marketing</li>
-                  <li>Email Marketing</li>
+                  <li>Facebook Boosting / Ad Management</li>
+                  <li>Content Marketing</li>
                 </ul>
 
-                <h4 className="text-lg font-semibold mt-3">Creative Content</h4>
-                <ul>
-                  <li>Content Writing</li>
-                  <li>Video Production</li>
-                </ul>
-
-                <h4 className="text-lg font-semibold mt-3">Creative Design</h4>
-                <ul>
-                  <li>UI/UX Design</li>
-                  <li>Graphic Design</li>
+                <h4 className="text-lg font-semibold mt-3 ">
+                  Creative Content
+                </h4>
+                <ul className="list-disc pl-6">
+                  <li>Logo Design</li>
+                  <li>Graphics Design</li>
                 </ul>
               </div>
             )}
           </div>
+
 
           <Link to="/career" className="block py-2">Career</Link>
           <Link to="/blog" className="block py-2">Blog</Link>
