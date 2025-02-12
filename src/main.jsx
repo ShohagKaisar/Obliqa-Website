@@ -6,11 +6,23 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Home from './component/Home/Home.jsx';
+import AboutObliqa from './component/AboutObliqa/AboutObliqa.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>
+      },
+      {
+        path: '/about',
+        element: <AboutObliqa></AboutObliqa>
+      },
+    ]
   },
 ]);
 
