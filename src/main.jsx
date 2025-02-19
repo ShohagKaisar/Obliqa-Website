@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import Home from './component/Home/Home.jsx';
 import AboutObliqa from './component/AboutObliqa/AboutObliqa.jsx';
-import Contact from './component/Contact/contact.jsx';
+import ContactForm from './component/ContactForm/ContactForm.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/contact',
-        element: <Contact></Contact>
+        element: <ContactForm></ContactForm>
       },
     ]
   },
