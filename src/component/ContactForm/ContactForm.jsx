@@ -1,6 +1,8 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import "./ContactForm.css";
+// import Video from "../../shared/Video";
+// import video from "../../assets/video.mp4"
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -24,10 +26,10 @@ const ContactForm = () => {
 
     emailjs
       .send(
-        "service_wtov8ck",   // Replace with your EmailJS Service ID
-        "template_syejxgv",  // Replace with your EmailJS Template ID
+        "service_wtov8ck",   //EmailJS Service ID
+        "template_syejxgv",  //EmailJS Template ID
         formData,
-        "6ToSd4r0vmxRi_zYC"    // Replace with your EmailJS Public Key
+        "6ToSd4r0vmxRi_zYC"    //EmailJS Public Key
       )
       .then(
         (response) => {
@@ -43,14 +45,17 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contact-form-container mt-32 mx-auto">
-      <h2>Contact Us</h2>
+    <>
+      <section className="w-full flex items-center justify-center pt-32">
+        {/* Hero Content */}
+    <div className="contact-form-container mx-auto z-20">
+      <h2 className="text-center text-5xl font-bold">Contact Us</h2>
       <form onSubmit={handleSubmit}>
         <label>Name:</label>
         <input type="text" name="name" value={formData.name} onChange={handleChange} required />
 
         <label>Phone Number:</label>
-        <input type="number" name="number" value={formData.number} onChange={handleChange} required />
+        <input type="tel" name="number" value={formData.number} onChange={handleChange} required />
 
         <label>Email:</label>
         <input type="email" name="email" value={formData.email} onChange={handleChange} required />
@@ -62,6 +67,8 @@ const ContactForm = () => {
       </form>
       {status && <p>{status}</p>}
     </div>
+      </section>
+    </>
   );
 };
 
