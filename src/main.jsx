@@ -9,6 +9,7 @@ import {
 import Home from './component/Home/Home.jsx';
 import AboutObliqa from './component/AboutObliqa/AboutObliqa.jsx';
 import ContactForm from './component/ContactForm/ContactForm.jsx';
+import Projects from './component/Projects/Projects.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <ContactForm></ContactForm>
+      },
+      {
+        path: '/project',
+        element: <Projects></Projects>
       },
     ]
   },
