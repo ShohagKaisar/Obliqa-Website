@@ -10,11 +10,11 @@ const Footer = () => {
             <nav className="flex flex-col gap-4 items-center my-4">
               <img src={companyLogo} alt="" />
               <div className="flex gap-4">
-                <a className="text-3xl" href="#"><TiSocialFacebook />
+                <a className="text-3xl" href="https://www.facebook.com/people/OBLIQA-IT-Solutions/61574924409322/?mibextid=ZbWKwL" target="_blank"><TiSocialFacebook />
                 </a>
-                <a className="text-3xl" href="https://www.linkedin.com/company/obliqa-it-solutions/ "><TiSocialLinkedin />
+                <a className="text-3xl" href="https://www.linkedin.com/company/obliqa-it-solutions/" target="_blank"><TiSocialLinkedin />
                 </a>
-                <a className="text-3xl" href="#"><TiSocialTwitter />
+                <a className="text-3xl" href="#" target="_blank"><TiSocialTwitter />
                 </a>
               </div>
             </nav>

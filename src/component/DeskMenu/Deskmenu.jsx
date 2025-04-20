@@ -58,9 +58,6 @@ function Deskmenu() {
           <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
             <a href="#">Third-Party API Integration</a>
           </li>
-          <li className="hover:text-[#EC8314] hover:translate-x-1 transition-all duration-200">
-            <a href="#">Web Performance Optimization</a>
-          </li>
 
         </ul>
       </div>
