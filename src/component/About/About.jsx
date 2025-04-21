@@ -22,9 +22,9 @@ const About = () => {
               <h1 className="text-5xl max-sm:text-center font-bold z-10  mb-5">
                 ABOUT
               </h1>
-              <h1 className="text-[2rem] max-sm:text-center font-bold bottom-20 z-0 pp1">
+              {/* <h1 className="text-[2rem] max-sm:text-center font-bold bottom-20 z-0 pp1">
                 OBLIQA IT Solution
-              </h1>
+              </h1> */}
               <p className="py-6 text-justify">
               At Obliqa IT Solution, we stand for excellence, faith, and innovation. As a startup company, we bring fresh ideas and a dynamic approach to the ever-evolving tech industry. We don’t just take on projects, we take our clients visions seriously, turning their ideas into success stories. Technology should empower businesses, not just support them. That’s why we go beyond coding. We strategize, innovate, and deliver solutions that truly make a difference. Whether it’s a small startup or a large enterprise, our expert development team is ready to build, scale, and optimize with cutting-edge technology. But we’re not stopping here. Our mission is bigger. We aim to make Obliqa IT a globally recognized technology leader known for delivering solutions that redefine industries while keeping client satisfaction at the heart of everything we do. Let’s build the future together.
               </p>

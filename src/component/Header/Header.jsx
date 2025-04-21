@@ -5,7 +5,6 @@ import companyLogo from "../../assets/obloqa_logo.webp";
 import Mobilemenu from "../MobileMenu/mobilemenu";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
   const buttonRef = useRef(null);

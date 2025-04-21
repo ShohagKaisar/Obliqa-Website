@@ -1,29 +1,143 @@
-
-import video from '../../assets/Video/Hero_bg_video.mp4'
+import { useRef, useEffect } from 'react';
+import { motion, useAnimation, useInView } from 'framer-motion';
+import video from '../../assets/Video/Hero_bg_video.mp4';
 import Video from '../../shared/Video';
+import { HashLink } from 'react-router-hash-link';
+import { NavLink } from 'react-router-dom';
 
 const Hero = () => {
-  return (
-    <div>
-      <div className="relative min-h-screen bg-dark opacity-95 z-0">
-        {/* Call the Vodeo Component for background Video */}
-        <Video videoSrc={video}></Video> 
-        <div className="bg-opacity-60"></div>
-        <section className="relative w-full h-screen flex items-center justify-center text-center text-white">
-          {/* Background Video */}
-          <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
-            <Video videoSrc={Video} className="w-full h-full object-cover absolute" />
-            <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div> {/* Dark Overlay */}
-          </div>
+  const controls = useAnimation();
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
-          {/* Hero Content */}
-          <div className="relative z-10 px-6">
-            <h1 className="text-7xl font-bold">OBLIQA IT Solution</h1>
-            <p className="mt-4 text-xl max-w-xl mx-auto">
-              Your trusted partner in web design, development, SEO, and digital marketing.
-            </p>
-          </div>
-        </section>
+  useEffect(() => {
+    if (isInView) {
+      controls.start("visible");
+    }
+  }, [isInView, controls]);
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3,
+        delayChildren: 0.2
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        damping: 10,
+        stiffness: 100
+      }
+    }
+  };
+
+  const videoVariants = {
+    hidden: { scale: 1.2, opacity: 0 },
+    visible: {
+      scale: 1,
+      opacity: 1,
+      transition: {
+        duration: 1.5,
+        ease: "easeOut"
+      }
+    }
+  };
+
+  return (
+    <div ref={ref}>
+      <div className="relative min-h-screen bg-dark opacity-95 z-0 overflow-hidden">
+        {/* Background Video with Animation */}
+        <motion.div
+          className="absolute top-0 left-0 w-full h-full overflow-hidden"
+          initial="hidden"
+          animate={controls}
+          variants={videoVariants}
+        >
+          <Video videoSrc={video} className="w-full h-full object-cover absolute" />
+          <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div>
+        </motion.div>
+
+        {/* Hero Content with Staggered Animations */}
+        <motion.section
+          className="relative w-full h-screen flex items-center justify-center text-center text-white"
+          initial="hidden"
+          animate={controls}
+          variants={containerVariants}
+        >
+          <motion.div className="relative z-10 px-6" variants={containerVariants}>
+            <motion.h1
+              className="text-5xl md:text-7xl font-bold mb-6"
+              variants={itemVariants}
+            >
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+                OBLIQA IT Solution
+              </span>
+            </motion.h1>
+
+            <motion.p
+              className="mt-4 text-lg md:text-xl max-w-xl mx-auto"
+              variants={itemVariants}
+            >
+              Your trusted partner in web design, development, SEO and digital marketing.
+            </motion.p>
+
+            <motion.div variants={itemVariants} className="mt-8">
+              <motion.button
+                className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-semibold text-white hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <HashLink
+                  to="/#get-started"
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                >
+                  <button>Get Started</button>
+                </HashLink>
+
+              </motion.button>
+            </motion.div>
+          </motion.div>
+
+
+          {/* Animated Scrolling Indicator */}
+          <motion.div
+            className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
+            animate={{
+              y: [0, 10, 0],
+              opacity: [0.6, 1, 0.6]
+            }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          >
+            <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
+              <motion.div
+                className="w-1 h-2 bg-white rounded-full mt-1"
+                animate={{
+                  y: [0, 4, 0]
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+              />
+            </div>
+          </motion.div>
+        </motion.section>
       </div>
     </div>
   );
