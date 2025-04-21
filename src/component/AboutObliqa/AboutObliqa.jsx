@@ -1,4 +1,4 @@
-import about_video from '../../assets/about_video.mp4';
+import about_video from '../../assets/video/about_video.mp4';
 import Video from '../../shared/Video';
 
 const AboutObliqa = () => {
