@@ -1,6 +1,6 @@
-import React from 'react';
 import './about.css';
 import companyLogo from '../../assets/obloqa_logo.webp'
+import { NavLink } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -26,21 +26,15 @@ const About = () => {
                 OBLIQA IT Solution
               </h1>
               <p className="py-6 text-justify">
-                OBLIQA IT Solution proudly stands among the best IT consulting
-                firms. Our mission is to assist all types of businesses with their
-                digital needs. Whether you’re striving to improve your online store,
-                excel in digital marketing, or require top-notch technical development
-                and design, OBLIQA IT Solution is your trusted partner on the path
-                to digital success. At OBLIQA IT Solution, our commitment to
-                excellence sets us apart in the realm of IT consulting. As a
-                distinguished partner, we cater to diverse businesses, offering
-                comprehensive solutions to meet their evolving digital requirements.
+              At Obliqa IT Solution, we stand for excellence, faith, and innovation. As a startup company, we bring fresh ideas and a dynamic approach to the ever-evolving tech industry. We don’t just take on projects, we take our clients visions seriously, turning their ideas into success stories. Technology should empower businesses, not just support them. That’s why we go beyond coding. We strategize, innovate, and deliver solutions that truly make a difference. Whether it’s a small startup or a large enterprise, our expert development team is ready to build, scale, and optimize with cutting-edge technology. But we’re not stopping here. Our mission is bigger. We aim to make Obliqa IT a globally recognized technology leader known for delivering solutions that redefine industries while keeping client satisfaction at the heart of everything we do. Let’s build the future together.
               </p>
-              <div className="flex items-center max-md:justify-center">
+                <NavLink to={'/about'}>
+                <div className="flex items-center max-md:justify-center">
                 <button className="btn btn-info btn-block text-white text-xl">
                   Learn About OBLIQA
                 </button>
-              </div>
+              </div></NavLink>
+
             </div>
           </div>
         </div>
@@ -73,7 +67,6 @@ const About = () => {
           &nbsp;&nbsp;&nbsp;&nbsp;
         </div>
       </>
-
     </div>
   );
 }
