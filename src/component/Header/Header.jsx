@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Deskmenu from "../DeskMenu/Deskmenu";
-import companyLogo from "../../assets/obloqa_logo.webp";
+import companyLogo from "../../assets/logo.svg";
+import { Mail } from 'lucide-react';
 import Mobilemenu from "../MobileMenu/mobilemenu";
 
 const Header = () => {
@@ -36,7 +37,7 @@ const Header = () => {
             <Link to="/">
               <img src={companyLogo} alt="Company Logo" className="h-10" />
             </Link>
-            <nav className="text-black hidden lg:flex space-x-6">
+            <nav className="text-[#ffffff] hidden lg:flex space-x-6">
               <Link to="/" className="hover:text-[#EC8314]">Home</Link>
               <Link to="/about" className="hover:text-[#EC8314]">About Obliqa</Link>
 
@@ -59,10 +60,10 @@ const Header = () => {
             </nav>
 
             {/* Contact Button (Desktop) */}
-            <Link to="/contact" className="hidden lg:block bg-[#1E3F62] px-4 py-2 rounded-full hover:bg-blue-600">
+            {/* <Link to="/contact" className="hidden lg:block bg-[#1E3F62] px-4 py-2 rounded-full hover:bg-blue-600">
               Get in Touch
-            </Link>
-
+            </Link> */}
+            <a className="hidden lg:block px-4 hover:text-blue-600 py-2" href="mailto:contact@obliqa.com"><Mail size={36} strokeWidth={1.25} /></a>
             {/* Mobile Menu Button */}
             <Mobilemenu></Mobilemenu>
           </div>
