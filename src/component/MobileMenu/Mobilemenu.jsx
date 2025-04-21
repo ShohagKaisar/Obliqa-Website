@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
-function mobilemenu() {
+function Mobilemenu() {
   const [mobileDropdown, setMobileDropdown] = useState(false);
   return (
     <div className="lg:hidden ">
@@ -91,4 +91,4 @@ function mobilemenu() {
   )
 }
 
-export default mobilemenu
+export default Mobilemenu;
