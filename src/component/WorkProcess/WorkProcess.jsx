@@ -46,7 +46,7 @@ const WorkProcess = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="pt-28 pb-12 bg-white">
       <div className="container mx-auto px-6 max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -77,11 +77,6 @@ const WorkProcess = () => {
               className="relative"
             >
               {/* Mobile connector */}
-              {index % 3 !== 2 && index !== steps.length - 1 && (
-                <div className="lg:hidden flex items-center justify-center py-4">
-                  <FiChevronRight className="text-gray-300" size={24} />
-                </div>
-              )}
 
               <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 h-full">
                 <div className="flex items-start mb-6">
