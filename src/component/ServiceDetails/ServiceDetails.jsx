@@ -13,7 +13,7 @@ const ServiceDetails = () => {
   const services = [
     {
       title: "Web Development",
-      description: "We build high-performance websites and web applications using modern technologies like Wordpress, React, Node.js, and MongoDB.",
+      description: "We build high-performance websites and web applications using modern technologies like Wordpress, React, Node.js, Expressjs and MongoDB.",
       features: [
         "Custom web application development",
         "E-commerce solutions",
@@ -25,7 +25,7 @@ const ServiceDetails = () => {
     },
     {
       title: "SEO Services",
-      description: "Comprehensive search engine optimization to improve your website's visibility and organic traffic.",
+      description: "Comprehensive search engine optimization services designed to significantly improve your website's visibility, boost organic traffic, enhance search rankings.",
       features: [
         "Keyword research & strategy",
         "On-page optimization",

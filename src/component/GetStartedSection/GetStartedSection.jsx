@@ -48,7 +48,7 @@ export default function GetStartedSection() {
       content: "Step-by-step: Consultation, Requirement Analysis, Development, Testing, Deployment.",
       color: "bg-gradient-to-br from-purple-500 to-purple-700",
       icon: "🔄",
-      link: '/ServiceDetails'
+      link: '/WorkProcess'
     },
     {
       title: "Pricing Plans",

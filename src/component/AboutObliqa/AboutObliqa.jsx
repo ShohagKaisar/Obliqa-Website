@@ -1,5 +1,6 @@
 import about_video from '../../assets/video/about_video.mp4';
 import Video from '../../shared/Video';
+import ServiceDetails from '../ServiceDetails/ServiceDetails';
 
 const AboutObliqa = () => {
 
@@ -56,19 +57,9 @@ const AboutObliqa = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 bg-gray-100 px-6">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8">Our Services</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {services.map((service, index) => (
-              <div key={index} className="bg-white shadow-md p-6 rounded-lg hover:shadow-lg transition">
-                <h3 className="text-xl font-semibold text-blue-600">{service.title}</h3>
-                <p className="mt-2 text-gray-600">{service.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <div className='px-24'>
+        <ServiceDetails></ServiceDetails>
+</div>
 
       {/* Call to Action Section */}
       <section className="py-16 text-center px-6">

@@ -3,40 +3,80 @@
   "title": "Food Share Point",
   "description": "Food Share Point is a platform to donate extra food for free to those in need. Reduce waste, fight hunger, and share with your community — one meal at a time.",
   "technologies": [
+    "HTML",
+    "Tailwind CSS",
     "React",
     "Express.js",
     "MongoDB",
     "Firebase",
-    "Nodejs",
-    "Tailwind CSS"
+    "Nodejs"
   ],
   "image": "./Image/Project_Image/Food_Share_Point_Banner.jpg",
   "link": "https://mshohagdev-food-share-point.netlify.app/availablefoods"
 },
 {
-  "id": 1,
-  "title": "Employee Attendance System",
-  "description": "A real-time attendance tracking system integrated with ZKTeco devices, using biometric data for check-in and check-out.",
+  "id": 2,
+  "title": "Movie Portal",
+  "description": "Movie Portal is an online movie streaming website where users can watch the latest movies and shows anytime, anywhere.",
   "technologies": [
+    "HTML",
+    "Tailwind CSS",
     "React",
     "Express.js",
     "MongoDB",
-    "Tailwind CSS"
+    "Firebase",
+    "Nodejs"
   ],
-  "image": "/images/projects/attendance-system.png",
-  "link": "https://example.com/attendance-system"
+  "image": "./Image/Project_Image/Movie_Portal_Banner.jpg",
+  "link": "https://mshohagdev-movie-portal.netlify.app/#slide3"
 },
 {
-  "id": 1,
-  "title": "Employee Attendance System",
-  "description": "A real-time attendance tracking system integrated with ZKTeco devices, using biometric data for check-in and check-out.",
+  "id": 3,
+  "title": "Eco Adventure",
+  "description": "Eco Adventure is a tourism website offering thrilling eco-friendly travel experiences. Discover nature, book adventures.",
   "technologies": [
+    "HTML",
+    "Tailwind CSS",
     "React",
-    "Express.js",
-    "MongoDB",
-    "Tailwind CSS"
+    "Firebase"
   ],
-  "image": "/images/projects/attendance-system.png",
-  "link": "https://example.com/attendance-system"
+  "image": "./Image/Project_Image/ECO_Adventure_Banner.jpg",
+  "link": "https://mshohagdev-eco-adventure.netlify.app/"
+},
+{
+  "id": 4,
+  "title": "BPL Dream",
+  "description": "BPL Dream Player Selection lets you build and share your dream BPL team by picking your favorite players.",
+  "technologies": [
+    "HTML",
+    "Tailwind CSS",
+    "React"
+  ],
+  "image": "./Image/Project_Image/BPL_Dream_Banner.jpg",
+  "link": "https://mshohagbev-bpl-dream.netlify.app/"
+},
+{
+  "id": 5,
+  "title": "Gadget Haven",
+  "description": "Gadget Haven is an online e-commerce website offering the latest gadgets and tech accessories at great prices. Shop smart, fast, and easy!",
+  "technologies": [
+    "HTML",
+    "Tailwind CSS",
+    "React"
+  ],
+  "image": "./Image/Project_Image/Gadget_Haven_Banner.jpg",
+  "link": "https://mshohagdev-gadget-haven.netlify.app/"
+},
+{
+  "id": 6,
+  "title": "Peddy (Pet Adoption)",
+  "description": "Pet Adoption is a caring platform where you can find and adopt loving pets looking for a forever home.",
+  "technologies": [
+    "HTML",
+    "Tailwind CSS",
+    "React"
+  ],
+  "image": "./Image/Project_Image/Pet_Adopt_Banner.jpg",
+  "link": "https://mshohagdev-pet-adopt.netlify.app/"
 }
 ]

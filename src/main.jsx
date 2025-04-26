@@ -11,6 +11,7 @@ import AboutObliqa from './component/AboutObliqa/AboutObliqa.jsx';
 import ContactForm from './component/ContactForm/ContactForm.jsx';
 import Projects from './component/Projects/Projects.jsx';
 import ServiceDetails from './component/ServiceDetails/ServiceDetails.jsx';
+import WorkProcess from './component/WorkProcess/WorkProcess.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: '/ServiceDetails',
         element: <ServiceDetails></ServiceDetails>
+      },
+      {
+        path: '/WorkProcess',
+        element: <WorkProcess></WorkProcess>
       },
     ]
   },
