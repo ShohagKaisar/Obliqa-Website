@@ -1,0 +1,42 @@
+[{
+  "id": 1,
+  "title": "Food Share Point",
+  "description": "Food Share Point is a platform to donate extra food for free to those in need. Reduce waste, fight hunger, and share with your community — one meal at a time.",
+  "technologies": [
+    "React",
+    "Express.js",
+    "MongoDB",
+    "Firebase",
+    "Nodejs",
+    "Tailwind CSS"
+  ],
+  "image": "./Image/Project_Image/Food_Share_Point_Banner.jpg",
+  "link": "https://mshohagdev-food-share-point.netlify.app/availablefoods"
+},
+{
+  "id": 1,
+  "title": "Employee Attendance System",
+  "description": "A real-time attendance tracking system integrated with ZKTeco devices, using biometric data for check-in and check-out.",
+  "technologies": [
+    "React",
+    "Express.js",
+    "MongoDB",
+    "Tailwind CSS"
+  ],
+  "image": "/images/projects/attendance-system.png",
+  "link": "https://example.com/attendance-system"
+},
+{
+  "id": 1,
+  "title": "Employee Attendance System",
+  "description": "A real-time attendance tracking system integrated with ZKTeco devices, using biometric data for check-in and check-out.",
+  "technologies": [
+    "React",
+    "Express.js",
+    "MongoDB",
+    "Tailwind CSS"
+  ],
+  "image": "/images/projects/attendance-system.png",
+  "link": "https://example.com/attendance-system"
+}
+]

@@ -62,7 +62,7 @@ export default function GetStartedSection() {
       content: "Explore our recent projects showcasing our expertise and client solutions.",
       color: "bg-gradient-to-br from-green-500 to-green-700",
       icon: "🎨",
-      link: '/ServiceDetails'
+      link: '/Projects'
     },
     {
       title: "Testimonials",

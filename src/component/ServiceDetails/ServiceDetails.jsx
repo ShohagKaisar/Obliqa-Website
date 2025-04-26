@@ -75,7 +75,7 @@ const ServiceDetails = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4 pt-20">
+    <div className="min-h-screen bg-gray-50 py-12 px-4 pt-32">
       <div className="max-w-7xl mx-auto">
         <motion.h1
           initial={{ opacity: 0 }}

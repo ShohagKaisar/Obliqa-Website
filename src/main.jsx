@@ -29,8 +29,9 @@ const router = createBrowserRouter([
         element: <ContactForm></ContactForm>
       },
       {
-        path: '/project',
-        element: <Projects></Projects>
+        path: '/projects',
+        element: <Projects></Projects>,
+        loader: () => fetch('/projects.json')
       },
       {
         path: '/ServiceDetails',
