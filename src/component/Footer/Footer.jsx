@@ -1,11 +1,11 @@
-import companyLogo from "../../assets/OBLIQA.png";
+import companyLogo from "../../assets/logo.svg";
 import { TiSocialFacebook, TiSocialLinkedin, TiSocialTwitter } from "react-icons/ti";
 
 const Footer = () => {
   return (
     <div>
       <>
-        <footer className="grid lg:gap-8 lg:grid-cols-4 bg-[#061E39] text-white min-h-80 py-12 px-5 mt-8 ">
+        <footer className="grid lg:gap-8 lg:grid-cols-4 bg-[#263238] text-white min-h-80 py-12 px-5 mt-8 ">
           <div>
             <nav className="flex flex-col gap-4 items-center my-4">
               <img src={companyLogo} alt="" />
@@ -20,7 +20,7 @@ const Footer = () => {
             </nav>
           </div>
           <div className="flex flex-col text-current space-y-2 mb-5">
-            <h6 className="text-2xl font-bold mb-3 text-[#00B5FF] uppercase tracking-wider">
+            <h6 className="text-2xl font-bold mb-3 text-white  uppercase tracking-wider">
               Services
             </h6>
             <a className="link text-lg text-gray-300 link-hover">
@@ -30,7 +30,7 @@ const Footer = () => {
             <a className="link text-lg text-gray-300 link-hover">Content marketing</a>
           </div>
           <div className="flex flex-col space-y-2 mb-5">
-            <h6 className="text-2xl font-bold mb-3 text-[#00B5FF] uppercase tracking-wider">
+            <h6 className="text-2xl font-bold mb-3 text-white uppercase tracking-wider">
               Information
             </h6>
             <a className="link text-lg text-gray-300 link-hover ">Home</a>
@@ -40,7 +40,7 @@ const Footer = () => {
             <a className="link text-lg text-gray-300 link-hover">Blog</a>
           </div>
           <div className="flex flex-col text-lg space-y-2">
-            <h6 className="text-2xl font-bold mb-3 text-[#00B5FF] uppercase tracking-wider ">
+            <h6 className="text-2xl font-bold mb-3 text-white uppercase tracking-wider ">
               Contact Info
             </h6>
             <p className="text-gray-300">
@@ -72,7 +72,7 @@ const Footer = () => {
             </p>
           </div>
         </footer>
-        <div className="footer bg-blue-950 text-neutral-content items-center justify-center p-4">
+        <div className="footer bg-[#f27f20] text-white items-center justify-center p-4">
           <aside className="grid-flow-col items-center text-center ">
             <p> © 2025 OBLIQA All rights reserved.</p>
             &nbsp;

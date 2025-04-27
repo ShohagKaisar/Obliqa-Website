@@ -44,7 +44,7 @@ const WorkProcess = () => {
   ];
 
   return (
-    <section id="how_we_work" className="pt-28 pb-12 bg-white">
+    <section id="how_we_work" className="pt-28 pb-12 bg-[#F5F7FA] ">
       <div className="container mx-auto px-6 max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -64,7 +64,7 @@ const WorkProcess = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:mx-7 lg:grid-cols-3 gap-14">
           {steps.map((step, index) => (
             <motion.div
               key={index}
@@ -76,7 +76,7 @@ const WorkProcess = () => {
             >
               {/* Mobile connector */}
 
-              <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 h-full">
+              <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 h-full">
                 <div className="flex items-start mb-6">
                   <div className="p-3 rounded-lg bg-indigo-50 mr-4 flex-shrink-0">
                     {step.icon}
@@ -105,11 +105,11 @@ const WorkProcess = () => {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <NavLink to={'/contact'}>
+          {/* <NavLink to={'/contact'}>
             <button onClick={() => window.scrollTo(0, 0)} className="px-8 py-3.5 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg transition-all duration-200 hover:shadow-lg shadow-indigo-500/20">
               Begin Your Project Journey
             </button>
-</NavLink>
+</NavLink> */}
         </motion.div>
       </div>
     </section>

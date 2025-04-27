@@ -27,25 +27,25 @@
 
         .one {
             top: 180px;
-            background: linear-gradient(135deg, #f12711, #f5af19);
+            background: linear-gradient(135deg, #263238, #717171);
         }
 
         .two {
             top: 195px;
-            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            background: linear-gradient(135deg, #f27f20, #f5af19);
         }
 
         .three {
             top: 215px;
-            background: linear-gradient(135deg, #11998e, #38ef7d);
+            background: linear-gradient(135deg, #263238, #717171);
         }
 
         .four {
             top: 235px;
-            background: linear-gradient(135deg, #8e2de2, #4a00e0);
+            background: linear-gradient(135deg, #f27f20, #f5af19);
         }
 
         .five {
             top: 250px;
-            background: linear-gradient(135deg, #4568dc, #b06ab3);
+            background: linear-gradient(135deg, #263238, #717171);
         }

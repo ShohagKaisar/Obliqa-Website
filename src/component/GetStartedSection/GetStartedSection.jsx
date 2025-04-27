@@ -40,42 +40,42 @@ export default function GetStartedSection() {
     {
       title: "Our Services",
       content: "We offer Web Design, Web Development, SEO, Digital Marketting and IT Consultancy.",
-      color: "bg-gradient-to-br from-purple-500 to-purple-700",
+      color: "bg-white",
       icon: "💻",
       link: '/ServiceDetails'
     },
     {
       title: "How We Works",
       content: "Step-by-step: Consultation, Requirement Analysis, Development, Testing, Deployment.",
-      color: "bg-gradient-to-br from-purple-500 to-purple-700",
+      color: "bg-white",
       icon: "🔄",
       link: '/WorkProcess'
     },
     {
       title: "Pricing Plans",
       content: "Flexible pricing options to suit businesses of all sizes and budgets.",
-      color: "bg-gradient-to-br from-purple-500 to-purple-700",
+      color: "bg-white",
       icon: "💰",
       link: '/ServiceDetails'
     },
     {
       title: "Portfolio",
       content: "Explore our recent projects showcasing our expertise and client solutions.",
-      color: "bg-gradient-to-br from-purple-500 to-purple-700",
+      color: "bg-white",
       icon: "🎨",
       link: '/Projects'
     },
     {
       title: "Testimonials",
       content: "Our clients love us! Read what they say about working with us.",
-      color: "bg-gradient-to-br from-purple-500 to-purple-700",
+      color: "bg-white",
       icon: "🌟",
       link: '/ServiceDetails'
     },
     {
       title: "Contact Us",
       content: "Get in touch or book a free consultation with our expert team.",
-      color: "bg-gradient-to-br from-purple-500 to-purple-700",
+      color: "bg-white",
       icon: "📞",
       link: '/ServiceDetails'
     },
@@ -97,7 +97,7 @@ export default function GetStartedSection() {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-[95%] mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 max-w-[95%] mx-auto">
         {sections.map((section, index) => (
           <motion.div
             key={section.title}
@@ -110,15 +110,15 @@ export default function GetStartedSection() {
           >
             <motion.div
               variants={cardVariants}
-              className={`h-full ${section.color} rounded-xl shadow-lg overflow-hidden text-white`}
+              className={`h-full ${section.color} rounded-xl shadow-md overflow-hidden text-white`}
             >
 
               <div className="p-8 h-full flex flex-col">
                 <div className="flex items-center mb-4">
                   <span className="text-4xl mr-4">{section.icon}</span>
-                  <h3 className="text-2xl font-bold">{section.title}</h3>
+                  <h3 className="text-2xl font-bold text-[#263238]">{section.title}</h3>
                 </div>
-                <p className="text-blue-100 flex-grow">{section.content}</p>
+                <p className=" flex-grow text-[#717171]">{section.content}</p>
                 <HashLink
                   to="/#how_we_work"
                   smooth={true}
@@ -129,7 +129,7 @@ export default function GetStartedSection() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={handleClick}
-                    className="flex items-center justify-center mt-6 w-full py-3 border-2 border-white border-opacity-30 bg-opacity-10 backdrop-blur-sm rounded-lg font-medium hover:bg-opacity-20 transition-all duration-300"
+                    className="flex items-center justify-center mt-6 w-full py-3 border-2 text-[#263238] border-[#f27f20] border-opacity-30 bg-opacity-10 backdrop-blur-sm rounded-full font-medium hover:bg-opacity-20 transition-all duration-300"
                   >
                     Explore More <ArrowRight className="w-4 h-4" />
                   </motion.button>
