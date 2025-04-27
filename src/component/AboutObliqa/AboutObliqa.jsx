@@ -4,12 +4,6 @@ import ServiceDetails from '../ServiceDetails/ServiceDetails';
 
 const AboutObliqa = () => {
 
-  const services = [
-    { title: "Web Design", desc: "Visually stunning and responsive websites that reflect your brand's identity." },
-    { title: "Web Development", desc: "Robust, scalable, and secure web applications tailored to your needs." },
-    { title: "SEO", desc: "Rank higher on search engines and increase organic traffic." },
-    { title: "Digital Marketing", desc: "Social media marketing, PPC campaigns, and brand growth strategies." },
-  ]
   return (
     <div className="bg-gray-50 text-gray-800">
       {/* Hero Section with Background Video */}

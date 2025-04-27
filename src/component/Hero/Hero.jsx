@@ -3,7 +3,6 @@ import { motion, useAnimation, useInView } from 'framer-motion';
 import video from '../../assets/Video/Hero_bg_video.mp4';
 import Video from '../../shared/Video';
 import { HashLink } from 'react-router-hash-link';
-import { NavLink } from 'react-router-dom';
 
 const Hero = () => {
   const controls = useAnimation();
@@ -54,7 +53,7 @@ const Hero = () => {
 
   return (
     <div ref={ref}>
-      <div className="relative min-h-screen bg-dark opacity-95 z-0 overflow-hidden">
+      <div className="relative h-80 lg:min-h-screen bg-dark opacity-95 z-0 overflow-hidden">
         {/* Background Video with Animation */}
         <motion.div
           className="absolute top-0 left-0 w-full h-full overflow-hidden"
@@ -68,14 +67,14 @@ const Hero = () => {
 
         {/* Hero Content with Staggered Animations */}
         <motion.section
-          className="relative w-full h-screen flex items-center justify-center text-center text-white"
+          className="relative w-full lg:h-screen flex items-center justify-center text-center text-white"
           initial="hidden"
           animate={controls}
           variants={containerVariants}
         >
           <motion.div className="relative z-10 px-6" variants={containerVariants}>
             <motion.h1
-              className="text-5xl md:text-7xl font-bold mb-6"
+              className="pt-24 lg:pt-0 text-3xl lg:text-5xl md:text-7xl font-bold mb-6"
               variants={itemVariants}
             >
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
@@ -112,7 +111,7 @@ const Hero = () => {
 
           {/* Animated Scrolling Indicator */}
           <motion.div
-            className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
+            className="absolute bottom-0 lg:bottom-10 left-10 lg:left-1/2 transform -translate-x-1/2"
             animate={{
               y: [0, 10, 0],
               opacity: [0.6, 1, 0.6]
