@@ -28,7 +28,7 @@ const Header = () => {
             </nav>
 
             {/* Right side Mail Icon */}
-            <NavLink to={'/contact'} onClick={() => window.scrollTo(0, 0)} className="hidden lg:block px-4 hover:text-[#EC8314] py-2" href="mailto:contact@obliqa.com"><Mail size={36} strokeWidth={1.25} /></NavLink>
+            <NavLink to={'/contact'} onClick={() => window.scrollTo(0, 0)} className="hidden lg:block px-4 hover:text-[#EC8314] py-2" href="mailto:contact@obliqa.com"><Mail size={24} strokeWidth={1.25} /></NavLink>
             {/* Mobile Menu Button */}
             <Mobilemenu></Mobilemenu>
           </div>

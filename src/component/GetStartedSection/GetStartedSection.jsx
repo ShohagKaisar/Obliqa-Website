@@ -40,7 +40,7 @@ export default function GetStartedSection() {
     {
       title: "Our Services",
       content: "We offer Web Design, Web Development, SEO, Digital Marketting and IT Consultancy.",
-      color: "bg-gradient-to-br from-blue-500 to-blue-700",
+      color: "bg-[#ffffff]",
       icon: "💻",
       link: '/ServiceDetails'
     },
@@ -82,14 +82,14 @@ export default function GetStartedSection() {
   ];
 
   return (
-    <div id="get-started" className="pt-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div id="get-started" className="pt-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-[#F5F7FA]">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="text-center mb-8"
       >
-        <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 mb-2">
+        <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-[#263238] mb-2">
           Let's Get Started
         </h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -97,7 +97,7 @@ export default function GetStartedSection() {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
         {sections.map((section, index) => (
           <motion.div
             key={section.title}

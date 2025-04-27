@@ -77,21 +77,21 @@ const Hero = () => {
               className="pt-24 lg:pt-0 text-3xl lg:text-5xl md:text-7xl font-bold mb-6"
               variants={itemVariants}
             >
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+              <span className="text-transparent bg-clip-text bg-white">
                 OBLIQA IT Solution
               </span>
             </motion.h1>
 
             <motion.p
-              className="mt-4 text-lg md:text-xl max-w-xl mx-auto"
+              className="mt-4 text-lg md:text-xl max-w-xl mx-auto text-[#F5F7FA]"
               variants={itemVariants}
             >
-              Your trusted partner in web design, development, SEO and digital marketing.
+              We deliver top-quality digital solutions, including web design, development, SEO, and marketing, tailored to your business. Our strategies boost growth, visibility, and digital transformation for startups and enterprises alike. With expert support, we ensure your success online.
             </motion.p>
 
             <motion.div variants={itemVariants} className="mt-8">
               <motion.button
-                className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-semibold text-white hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="px-8 py-3 bg-[#28CB8B] rounded-full font-semibold text-white hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
