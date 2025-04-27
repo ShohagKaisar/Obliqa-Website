@@ -6,3 +6,7 @@ LogoPrimary:-> #f27f20 bg-[#f27f20]
 Logo Seecondary:->263238
 
 For section Background White-bg:-> #F5F7FA bg-[#F5F7FA]
+
+
+Heading Text Size: Desktop 5xl Mobile 4xl
+Paragraph: 
