@@ -1,5 +1,6 @@
-Header Color #263238
-Text #717171
-Logo #ff914d
-Logo_sm #263238
-White-bg #F5F7FA
+For use Heading:-> Heading Color #263238
+For use Paragraph:-> Text #717171
+LogoPrimary:-> #f27f20 
+Logo Seecondary:->263238
+
+For section Background White-bg:-> #F5F7FA

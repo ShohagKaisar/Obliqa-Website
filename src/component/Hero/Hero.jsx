@@ -91,7 +91,7 @@ const Hero = () => {
 
             <motion.div variants={itemVariants} className="mt-8">
               <motion.button
-                className="px-8 py-3 bg-[#ff914d] rounded-full font-semibold text-white hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="px-8 py-3 bg-[#f27f20] rounded-full font-semibold text-white hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

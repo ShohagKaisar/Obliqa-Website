@@ -82,7 +82,7 @@ export default function GetStartedSection() {
   ];
 
   return (
-    <div id="get-started" className="pt-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-[#F5F7FA]">
+    <div id="get-started" className="pt-20 mx-auto px-4 py-8 sm:px-6 lg:px-8 bg-[#F5F7FA]">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -97,7 +97,7 @@ export default function GetStartedSection() {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-[95%] mx-auto">
         {sections.map((section, index) => (
           <motion.div
             key={section.title}
