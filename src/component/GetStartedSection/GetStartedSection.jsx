@@ -40,7 +40,7 @@ export default function GetStartedSection() {
     {
       title: "Our Services",
       content: "We offer Web Design, Web Development, SEO, Digital Marketting and IT Consultancy.",
-      color: "bg-[#4caf4f]",
+      color: "bg-gradient-to-br from-purple-500 to-purple-700",
       icon: "💻",
       link: '/ServiceDetails'
     },
@@ -54,28 +54,28 @@ export default function GetStartedSection() {
     {
       title: "Pricing Plans",
       content: "Flexible pricing options to suit businesses of all sizes and budgets.",
-      color: "bg-gradient-to-br from-teal-500 to-teal-700",
+      color: "bg-gradient-to-br from-purple-500 to-purple-700",
       icon: "💰",
       link: '/ServiceDetails'
     },
     {
       title: "Portfolio",
       content: "Explore our recent projects showcasing our expertise and client solutions.",
-      color: "bg-gradient-to-br from-green-500 to-green-700",
+      color: "bg-gradient-to-br from-purple-500 to-purple-700",
       icon: "🎨",
       link: '/Projects'
     },
     {
       title: "Testimonials",
       content: "Our clients love us! Read what they say about working with us.",
-      color: "bg-gradient-to-br from-amber-500 to-amber-700",
+      color: "bg-gradient-to-br from-purple-500 to-purple-700",
       icon: "🌟",
       link: '/ServiceDetails'
     },
     {
       title: "Contact Us",
       content: "Get in touch or book a free consultation with our expert team.",
-      color: "bg-gradient-to-br from-rose-500 to-rose-700",
+      color: "bg-gradient-to-br from-purple-500 to-purple-700",
       icon: "📞",
       link: '/ServiceDetails'
     },
@@ -97,7 +97,7 @@ export default function GetStartedSection() {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {sections.map((section, index) => (
           <motion.div
             key={section.title}
