@@ -9,7 +9,7 @@ const WhyChoseUs = () => {
   </div>
   <div className="whychooseus">
     <div className="whychooseuscard lg:px-16 max-md:px-8 one ">
-      <h1 className="pb-5 lg:text-7xl max-md:text-4xl">
+      <h1 className="pb-5 lg:text-6xl max-md:text-4xl ">
         Expertise Across Technologies
       </h1>
       <p className="lg:text-xl max-md:2xl">
@@ -19,7 +19,7 @@ const WhyChoseUs = () => {
       </p>
     </div>
     <div className="whychooseuscard lg:px-16 max-md:px-8 two">
-      <h1 className="pb-5 lg:text-7xl max-md:text-4xl">
+      <h1 className="pb-5 lg:text-6xl max-md:text-4xl">
         Custom Solutions for Every Need
       </h1>
       <p className="lg:text-xl max-md:2xl">
@@ -28,21 +28,21 @@ const WhyChoseUs = () => {
       </p>
     </div>
     <div className="whychooseuscard lg:px-16 max-md:px-8 three">
-      <h1 className="pb-5 lg:text-7xl max-md:text-4xl">Proven Track Record</h1>
+      <h1 className="pb-5 lg:text-6xl max-md:text-4xl">Proven Track Record</h1>
       <p className="lg:text-xl max-md:2xl">
         Demonstrated success with past projects and satisfied clients,
         reflecting reliability and capability.
       </p>
     </div>
     <div className="whychooseuscard lg:px-16 max-md:px-8 four">
-      <h1 className="pb-5 lg:text-7xl max-md:text-4xl">End-to-End Support</h1>
+      <h1 className="pb-5 lg:text-6xl max-md:text-4xl">End-to-End Support</h1>
       <p className="lg:text-xl max-md:2xl">
         Comprehensive support throughout the entire project lifecycle from
         planning and execution to maintenance and optimization.
       </p>
     </div>
     <div className="whychooseuscard lg:px-16 max-md:px-8 five z-20">
-      <h1 className="pb-5 lg:text-7xl max-md:text-4xl">
+      <h1 className="pb-5 lg:text-6xl max-md:text-4xl">
         Innovative and Future-Ready
       </h1>
       <p className="lg:text-xl max-md:2xl">

@@ -89,8 +89,8 @@ export default function GetStartedSection() {
         transition={{ duration: 0.6 }}
         className="text-center mb-8"
       >
-        <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-[#263238] mb-2">
-          Let's Get Started
+        <h2 className="text-4xl md:text-5xl py-3 font-bold bg-clip-text text-transparent bg-[#263238] mb-2">
+        Start Your Journey
         </h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           Discover how we can help transform your digital presence with our comprehensive services.
@@ -115,13 +115,13 @@ export default function GetStartedSection() {
 
               <div className="p-8 h-full flex flex-col">
                 <div className="flex items-center mb-4">
-                  <span className="text-4xl mr-4">{section.icon}</span>
+                  <span className="text-5xl ms-[-8px] mr-3">{section.icon}</span>
                   <h3 className="text-2xl font-bold text-[#263238]">{section.title}</h3>
                 </div>
                 <p className=" flex-grow text-[#717171]">{section.content}</p>
                 <HashLink
                   to="/#how_we_work"
-                  smooth={true}
+                  smooth={true} 
                   duration={500}
                   offset={-70}
                 >

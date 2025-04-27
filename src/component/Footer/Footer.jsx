@@ -72,7 +72,7 @@ const Footer = () => {
             </p>
           </div>
         </footer>
-        <div className="footer bg-[#f27f20] text-white items-center justify-center p-4">
+        <div className="footer bg-[#717171] text-white items-center justify-center p-4">
           <aside className="grid-flow-col items-center text-center ">
             <p> © 2025 OBLIQA All rights reserved.</p>
             &nbsp;
