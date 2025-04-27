@@ -12,7 +12,7 @@ const Header = () => {
     <>
       <div className="relative">
         <header
-          className='bg-black/20 backdrop-blur-md
+          className='bg-black/30 backdrop-blur-md
           fixed z-50 text-white w-11/12 mx-auto transition-all duration-300  rounded-full'
           style={{ top: "3%", left: "4.15%", right: "5%" }}
         >

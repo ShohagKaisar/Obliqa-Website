@@ -40,7 +40,7 @@ export default function GetStartedSection() {
     {
       title: "Our Services",
       content: "We offer Web Design, Web Development, SEO, Digital Marketting and IT Consultancy.",
-      color: "bg-[#ffffff]",
+      color: "bg-[#4caf4f]",
       icon: "💻",
       link: '/ServiceDetails'
     },

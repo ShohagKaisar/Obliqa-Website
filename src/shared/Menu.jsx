@@ -9,7 +9,7 @@ const Menu = ({ onItemClick }) => {
   };
 
   return (
-    <div className="text-[#ffffff] flex flex-col lg:flex-row space-x-6 space-y-5">
+    <div className="text-[#ffffff] flex flex-col gap-5 lg:flex-row lg:space-x-5  items-center ">
       <Link
         to="/"
         onClick={handleClick}
