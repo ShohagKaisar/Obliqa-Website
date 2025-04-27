@@ -1,12 +1,11 @@
 For use Heading:-> Heading Color #263238 text-[#263238]
-
-
 For use Paragraph:-> Text #717171 text-[#717171]
-LogoPrimary:-> #f27f20 bg-[#f27f20]
-Logo Seecondary:->263238
-
 For section Background White-bg:-> #F5F7FA bg-[#F5F7FA]
 
 
+LogoPrimary:-> #f27f20 bg-[#f27f20]
+Logo Seecondary:->263238
+
+
 Heading Text Size: Desktop 5xl Mobile 4xl
-Paragraph: 
+Paragraph text Size: 
