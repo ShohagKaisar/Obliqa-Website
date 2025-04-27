@@ -4,6 +4,8 @@ import About from '../About/About';
 import WhyChoseUs from '../WhyChoseUs/WhyChoseUs';
 import Map from '../Map/Map';
 import GetStartedSection from '../GetStartedSection/GetStartedSection';
+import GetInTouch from '../../shared/GetInTouch';
+import WorkProcess from '../WorkProcess/WorkProcess';
 
 const Home = () => {
   return (
@@ -12,7 +14,9 @@ const Home = () => {
       <About></About>
       <GetStartedSection></GetStartedSection>
       <WhyChoseUs></WhyChoseUs>
+      <WorkProcess></WorkProcess>
       <Map></Map>
+      <GetInTouch></GetInTouch>
     </div>
   );
 };

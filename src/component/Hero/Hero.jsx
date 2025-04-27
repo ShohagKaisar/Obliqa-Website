@@ -53,7 +53,7 @@ const Hero = () => {
 
   return (
     <div ref={ref}>
-      <div className="relative h-80 lg:min-h-screen bg-dark opacity-95 z-0 overflow-hidden">
+      <div className="relative h-96 lg:min-h-screen bg-dark opacity-95 z-0 overflow-hidden">
         {/* Background Video with Animation */}
         <motion.div
           className="absolute top-0 left-0 w-full h-full overflow-hidden"

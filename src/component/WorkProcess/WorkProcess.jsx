@@ -1,13 +1,11 @@
 import { motion } from "framer-motion";
 import {
-  FiChevronRight,
   FiUsers,
   FiClipboard,
   FiCode,
   FiCheckCircle,
   FiUploadCloud,
   FiSettings,
-  FiBarChart
 } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 
@@ -46,7 +44,7 @@ const WorkProcess = () => {
   ];
 
   return (
-    <section className="pt-28 pb-12 bg-white">
+    <section id="how_we_work" className="pt-28 pb-12 bg-white">
       <div className="container mx-auto px-6 max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

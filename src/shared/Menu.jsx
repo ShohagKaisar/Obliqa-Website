@@ -4,12 +4,12 @@ const Menu = ({ onItemClick }) => {
   const handleClick = () => {
     window.scrollTo(0, 0);
     if (onItemClick) {
-      onItemClick(); // This will close the mobile menu
+      onItemClick();
     }
   };
 
   return (
-    <div className="text-[#ffffff] flex flex-col lg:flex-row space-x-6">
+    <div className="text-[#ffffff] flex flex-col lg:flex-row space-x-6 space-y-5">
       <Link
         to="/"
         onClick={handleClick}

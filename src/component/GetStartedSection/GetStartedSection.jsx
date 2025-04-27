@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import { HashLink } from "react-router-hash-link";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -118,16 +119,21 @@ export default function GetStartedSection() {
                   <h3 className="text-2xl font-bold">{section.title}</h3>
                 </div>
                 <p className="text-blue-100 flex-grow">{section.content}</p>
-                <NavLink to={section.link}>
+                <HashLink
+                  to="/#how_we_work"
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                >
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={handleClick}
                     className="flex items-center justify-center mt-6 w-full py-3 border-2 border-white border-opacity-30 bg-opacity-10 backdrop-blur-sm rounded-lg font-medium hover:bg-opacity-20 transition-all duration-300"
                   >
-                    Learn More <ArrowRight className="w-4 h-4" />
+                    Explore More <ArrowRight className="w-4 h-4" />
                   </motion.button>
-                </NavLink>
+                </HashLink>
               </div>
             </motion.div>
           </motion.div>

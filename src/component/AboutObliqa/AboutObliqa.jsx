@@ -1,4 +1,5 @@
 import about_video from '../../assets/video/about_video.mp4';
+import GetInTouch from '../../shared/GetInTouch';
 import Video from '../../shared/Video';
 import ServiceDetails from '../ServiceDetails/ServiceDetails';
 
@@ -7,7 +8,7 @@ const AboutObliqa = () => {
   return (
     <div className="bg-gray-50 text-gray-800">
       {/* Hero Section with Background Video */}
-      <section className="relative w-full h-screen flex items-center justify-center text-center text-white">
+      <section className="relative w-full h-96 lg:h-screen flex items-center justify-center text-center text-white">
         {/* Background Video */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
           <Video videoSrc={about_video} className="w-full h-full object-cover absolute" />
@@ -16,8 +17,8 @@ const AboutObliqa = () => {
 
         {/* Hero Content */}
         <div className="relative z-10 px-6">
-          <h1 className="text-7xl font-bold">About OBLIQA IT Solution</h1>
-          <p className="mt-4 text-xl max-w-xl mx-auto">
+          <h1 className="text-5xl lg:text-7xl font-bold">About OBLIQA IT Solution</h1>
+          <p className="mt-4 lext-md lg:text-xl max-w-xl mx-auto">
             Your trusted partner in web design, development, SEO, and digital marketing.
           </p>
         </div>
@@ -53,20 +54,8 @@ const AboutObliqa = () => {
       {/* Services Section */}
       <div className='px-24'>
         <ServiceDetails></ServiceDetails>
-</div>
-
-      {/* Call to Action Section */}
-      <section className="py-16 text-center px-6">
-        <div className="container mx-auto">
-          <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Business?</h2>
-          <p className="max-w-xl mx-auto text-gray-600 mb-6">
-            Let's work together to create a digital presence that drives results. Contact us today!
-          </p>
-          <button className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition">
-            Get in Touch
-          </button>
-        </div>
-      </section>
+      </div>
+      <GetInTouch></GetInTouch>
     </div>
   );
 };
