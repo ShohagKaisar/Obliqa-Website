@@ -1,6 +1,8 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
+import Map from '../Map/Map';
 import { FiMapPin, FiPhone, FiMail, FiClock, FiSend } from "react-icons/fi";
+import { div } from "framer-motion/client";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -41,7 +43,8 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gray-50 pt-32 px-4">
+    <>
+    <section className="min-h-screen flex items-center justify-center bg-gray-50 pt-32 px-4 pb-12">
       <div className="max-w-6xl w-full bg-white rounded-xl shadow-lg overflow-hidden">
         <div className="md:flex">
           {/* Contact Form Section */}
@@ -205,7 +208,10 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
+      
     </section>
+    <Map></Map>
+    </>
   );
 };
 

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import { HashLink } from 'react-router-hash-link';
 const Menu = ({ onItemClick }) => {
   const handleClick = () => {
     window.scrollTo(0, 0);
@@ -24,6 +24,15 @@ const Menu = ({ onItemClick }) => {
       >
         About
       </Link>
+
+            {/* <HashLink
+                  to="/#about-us"
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                >
+                  <button>About OBLIQA</button>
+                </HashLink> */}
       <Link
         to="/ServiceDetails"
         onClick={handleClick}
@@ -36,7 +45,7 @@ const Menu = ({ onItemClick }) => {
         onClick={handleClick}
         className="hover:text-[#EC8314]"
       >
-        Projects
+        Portfolio
       </Link>
       <Link
         to="/contact"

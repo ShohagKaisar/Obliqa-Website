@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div>
       <>
-        <div className="hero bg-[#ffffff] min-h-64 py-8 px-4">
+        <div className="hero bg-[#ffffff] min-h-64 py-8 px-4" id="about-us">
           <div className="hero-content flex-col lg:flex-row">
             <div
               className="flex justify-center lg:mt-10 lg:w-[50%]"
@@ -21,7 +21,7 @@ const About = () => {
             </div>
             <div className="lg:w-3/4 ">
               <h1 className="text-5xl max-sm:text-center font-bold text-[#263238] z-10  mb-5">
-                ABOUT OBLIQA
+                About
               </h1>
               <p className="py-6 text-justify text-[#717171]">
               At Obliqa IT Solution, we stand for excellence, faith, and innovation. As a startup company, we bring fresh ideas and a dynamic approach to the ever-evolving tech industry. We don’t just take on projects, we take our clients visions seriously, turning their ideas into success stories. Technology should empower businesses, not just support them. That’s why we go beyond coding. We strategize, innovate, and deliver solutions that truly make a difference. Whether it’s a small startup or a large enterprise, our expert development team is ready to build, scale, and optimize with cutting-edge technology. But we’re not stopping here. Our mission is bigger. We aim to make Obliqa IT a globally recognized technology leader known for delivering solutions that redefine industries while keeping client satisfaction at the heart of everything we do. Let’s build the future together.

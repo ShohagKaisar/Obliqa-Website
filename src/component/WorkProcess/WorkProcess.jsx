@@ -14,37 +14,37 @@ const WorkProcess = () => {
     {
       title: "Discovery Phase",
       description: "We conduct in-depth interviews and workshops to fully understand your business objectives, challenges, and technical requirements.",
-      icon: <FiUsers className="text-indigo-600" size={20} />
+      icon: <FiUsers className="text-indigo-600" size={36} />
     },
     {
       title: "Strategic Planning",
       description: "Our team creates a comprehensive project roadmap with milestones, deliverables, and success metrics tailored to your goals.",
-      icon: <FiClipboard className="text-blue-600" size={20} />
+      icon: <FiClipboard className="text-blue-600" size={36} />
     },
     {
       title: "System Design",
       description: "We architect scalable solutions with intuitive interfaces, robust APIs, and optimized database structures for peak performance.",
-      icon: <FiSettings className="text-emerald-600" size={20} />
+      icon: <FiSettings className="text-emerald-600" size={36} />
     },
     {
       title: "Agile Development",
       description: "Using iterative sprints, we build your solution with modern frameworks while maintaining clean, documented code.",
-      icon: <FiCode className="text-amber-600" size={20} />
+      icon: <FiCode className="text-amber-600" size={36} />
     },
     {
       title: "Quality Assurance",
       description: "Our rigorous testing protocol includes unit tests, integration tests, and user acceptance testing to ensure reliability.",
-      icon: <FiCheckCircle className="text-purple-600" size={20} />
+      icon: <FiCheckCircle className="text-purple-600" size={36} />
     },
     {
       title: "Deployment & Support",
       description: "We handle seamless deployment with monitoring setup and provide ongoing maintenance with performance analytics.",
-      icon: <FiUploadCloud className="text-rose-600" size={20} />
+      icon: <FiUploadCloud className="text-rose-600" size={36} />
     }
   ];
 
   return (
-    <section id="how_we_work" className="pt-28 pb-12 bg-white">
+    <section id="how_we_work" className="pt-28 pb-12 bg-[#F5F7FA] ">
       <div className="container mx-auto px-6 max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -53,10 +53,10 @@ const WorkProcess = () => {
           viewport={{ once: true, margin: "-100px" }}
           className="text-center mb-16"
         >
-          <span className="text-sm font-semibold tracking-wider text-indigo-600 uppercase">
+          <span className="text-sm font-semibold tracking-wider text-[#263238] uppercase">
             Our 6-Step Process
           </span>
-          <h2 className="text-4xl font-bold text-gray-900 mt-3 mb-4">
+          <h2 className="lg:text-5xl text-4xl font-bold text-gray-900 mt-3 mb-4">
             Transparent Development Methodology
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -64,7 +64,7 @@ const WorkProcess = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:mx-7 lg:grid-cols-3 gap-14">
           {steps.map((step, index) => (
             <motion.div
               key={index}
@@ -76,21 +76,22 @@ const WorkProcess = () => {
             >
               {/* Mobile connector */}
 
-              <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 h-full">
-                <div className="flex items-start mb-6">
-                  <div className="p-3 rounded-lg bg-indigo-50 mr-4 flex-shrink-0">
+              <div className="bg-white p-8  rounded-xl shadow-md hover:shadow-lg transition-all duration-300 h-full">
+                <div className="flex flex-col items-start mb-6 space-y-3">
+                  <div className="  p-2 rounded-lg bg-indigo-50 mr-4 flex-shrink-0">
                     {step.icon}
-                  </div>
-                  <div>
                     <div className="flex items-center mb-1">
                       <span className="text-xs font-mono text-gray-400 mr-2">Step {index + 1}</span>
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900 leading-tight">
+                  </div>
+                  <div>
+                    
+                    <h3 className="text-2xl mb-2 font-semibold text-[#263238] leading-tight">
                       {step.title}
                     </h3>
                   </div>
                 </div>
-                <p className="text-gray-600 pl-14 -mt-5">
+                <p className="text-[#717171]  -mt-5">
                   {step.description}
                 </p>
               </div>
@@ -105,11 +106,11 @@ const WorkProcess = () => {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <NavLink to={'/contact'}>
+          {/* <NavLink to={'/contact'}>
             <button onClick={() => window.scrollTo(0, 0)} className="px-8 py-3.5 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg transition-all duration-200 hover:shadow-lg shadow-indigo-500/20">
               Begin Your Project Journey
             </button>
-</NavLink>
+</NavLink> */}
         </motion.div>
       </div>
     </section>

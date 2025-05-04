@@ -1,5 +1,0 @@
-Header Color #263238
-Text #717171
-Logo #ff914d
-Logo_sm #263238
-White-bg #F5F7FA
