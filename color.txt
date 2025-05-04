@@ -8,4 +8,4 @@ Logo Seecondary:->263238
 
 
 Heading Text Size: Desktop 5xl Mobile 4xl
-Paragraph text Size: 
+Paragraph text Size: #
