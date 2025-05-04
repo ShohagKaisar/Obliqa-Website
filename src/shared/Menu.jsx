@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
+
+
+
 const Menu = ({ onItemClick }) => {
   const handleClick = () => {
     window.scrollTo(0, 0);
@@ -10,49 +12,57 @@ const Menu = ({ onItemClick }) => {
 
   return (
     <div className="text-[#ffffff] flex flex-col gap-5 lg:flex-row lg:space-x-5  items-center ">
-      <Link
-        to="/"
-        onClick={handleClick}
-        className="hover:text-[#EC8314]"
-      >
-        Home
+
+      <Link to="/">
+        <button
+          onClick={handleClick}
+          className="p-2 cursor-pointer hover:text-[#EC8314] hover:scale-110 transition-all duration-200 ease-in-out"
+        >
+          Home
+        </button>
       </Link>
       <Link
         to="/about"
-        onClick={handleClick}
-        className="hover:text-[#EC8314]"
       >
-        About
-      </Link>
+        <button
+          onClick={handleClick}
+          className="p-2 cursor-pointer hover:text-[#EC8314] hover:scale-110 transition-all duration-200 ease-in-out"
+        >
+          About
+        </button>
 
-            {/* <HashLink
-                  to="/#about-us"
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                >
-                  <button>About OBLIQA</button>
-                </HashLink> */}
+      </Link>
       <Link
         to="/ServiceDetails"
-        onClick={handleClick}
-        className="hover:text-[#EC8314]"
       >
-        Services
+        <button
+          onClick={handleClick}
+          className="p-2 cursor-pointer hover:text-[#EC8314] hover:scale-110 transition-all duration-200 ease-in-out"
+        >
+          Services
+        </button>
       </Link>
       <Link
         to="/projects"
-        onClick={handleClick}
-        className="hover:text-[#EC8314]"
       >
-        Portfolio
+               <button
+          onClick={handleClick}
+          className="p-2 cursor-pointer hover:text-[#EC8314] hover:scale-110 transition-all duration-200 ease-in-out"
+        >
+          Portfolio
+        </button>
       </Link>
       <Link
         to="/contact"
         onClick={handleClick}
         className="hover:text-[#EC8314]"
       >
-        Contact us
+                <button
+          onClick={handleClick}
+          className="p-2 cursor-pointer hover:text-[#EC8314] hover:scale-110 transition-all duration-200 ease-in-out"
+        >
+          Contact Us
+        </button>
       </Link>
     </div>
   );

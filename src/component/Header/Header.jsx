@@ -1,9 +1,7 @@
-import { useRef } from "react";
 import { Link } from "react-router-dom";
 import companyLogo from "../../assets/logo.svg";
 import { BotMessageSquare } from 'lucide-react';
 import Mobilemenu from "../MobileMenu/mobilemenu";
-import { NavLink } from "react-router-dom";
 import Menu from "../../shared/Menu";
 
 
@@ -30,7 +28,7 @@ const Header = () => {
 
             {/* Right side Mail Icon */}
             {/* <NavLink to={'/contact'} onClick={() => window.scrollTo(0, 0)} className="hidden lg:block px-4 hover:text-[#EC8314] py-2" href="mailto:contact@obliqa.com"></NavLink> */}
-            <a href=""><button><BotMessageSquare strokeWidth={1} /></button> </a>
+            <a href="" className="hidden lg:block"><button><BotMessageSquare strokeWidth={1} /></button> </a>
             {/* Mobile Menu Button */}
             <Mobilemenu></Mobilemenu>
           </div>

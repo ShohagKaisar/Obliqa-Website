@@ -2,28 +2,33 @@ import about_video from '../../assets/video/about_video.mp4';
 import GetInTouch from '../../shared/GetInTouch';
 import Video from '../../shared/Video';
 import ServiceDetails from '../ServiceDetails/ServiceDetails';
+import { motion } from "framer-motion";
 
 const AboutObliqa = () => {
 
   return (
     <div className="bg-gray-50 text-gray-800">
       {/* Hero Section with Background Video */}
-      <section className="relative w-full h-96 lg:h-screen flex items-center justify-center text-center text-white">
-        {/* Background Video */}
-        <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
-          <Video videoSrc={about_video} className="w-full h-full object-cover absolute" />
-          <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div> {/* Dark Overlay */}
-        </div>
+      <section className="relative w-full pt-28 pb-10 lg:h-screen flex items-center justify-center text-center text-white">
+  {/* Background Video */}
+  <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
+    <Video videoSrc={about_video} className="w-full h-full object-cover absolute" />
+    <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div> {/* Dark Overlay */}
+  </div>
 
-        {/* Hero Content */}
-        <div className="relative z-10 px-6">
-          <h1 className="text-5xl lg:text-7xl font-bold">About OBLIQA IT Solution</h1>
-          <p className="mt-4 lext-md lg:text-xl max-w-xl mx-auto">
-            Your trusted partner in web design, development, SEO, and digital marketing.
-          </p>
-        </div>
-      </section>
-
+  {/* Hero Content */}
+  <motion.div
+    className="relative z-10 px-6"
+    initial={{ opacity: 0, y: 40 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1, ease: "easeOut" }}
+  >
+    <h1 className="text-4xl lg:text-7xl font-bold">About OBLIQA IT Solution</h1>
+    <p className="mt-4 text-md lg:text-xl max-w-xl mx-auto">
+      Your trusted partner in web design, development, SEO, and digital marketing.
+    </p>
+  </motion.div>
+</section>
       {/* About Us Section */}
       <section className="py-8 px-6">
         <div className="container mx-auto text-center">

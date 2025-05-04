@@ -49,7 +49,7 @@ export default function GetStartedSection() {
       content: "Step-by-step: Consultation, Requirement Analysis, Development, Testing, Deployment.",
       color: "bg-white",
       icon: "🔄",
-      link: '/WorkProcess'
+      link: '/#how_we_work'
     },
     {
       title: "Pricing Plans",
@@ -120,7 +120,7 @@ export default function GetStartedSection() {
                 </div>
                 <p className=" flex-grow text-[#717171]">{section.content}</p>
                 <HashLink
-                  to="/#how_we_work"
+                  to={section.link}
                   smooth={true} 
                   duration={500}
                   offset={-70}

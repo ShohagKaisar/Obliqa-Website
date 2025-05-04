@@ -53,7 +53,7 @@ const Hero = () => {
 
   return (
     <div ref={ref}>
-      <div className="relative h-96 lg:min-h-screen bg-dark opacity-95 z-0 overflow-hidden">
+      <div className="relative lg:min-h-screen bg-dark opacity-95 z-0 overflow-hidden py-10">
         {/* Background Video with Animation */}
         <motion.div
           className="absolute top-0 left-0 w-full h-full overflow-hidden"
@@ -83,28 +83,28 @@ const Hero = () => {
             </motion.h1>
 
             <motion.p
-              className="mt-4 text-lg md:text-xl max-w-xl mx-auto text-[#F5F7FA]"
+              className="mt-4 text-md lg:text-lg md:text-xl max-w-xl mx-auto text-[#F5F7FA]"
               variants={itemVariants}
             >
               We deliver top-quality digital solutions, including web design, development, SEO, and marketing, tailored to your business. Our strategies boost growth, visibility, and digital transformation for startups and enterprises alike. With expert support, we ensure your success online.
             </motion.p>
 
             <motion.div variants={itemVariants} className="mt-8">
-              <motion.button
-                className="px-8 py-3 bg-[#f27f20] rounded-full font-semibold text-white hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <HashLink
-                  to="/#get-started"
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                >
-                  <button>Get Started</button>
-                </HashLink>
+            <HashLink
+  to="/#get-started"
+  smooth={true}
+  duration={500}
+  offset={-70}
+>
+  <motion.button
+    className="px-8 py-3 bg-[#f27f20] rounded-full font-semibold text-white bg-gradient-to-r hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+  >
+    Get Started
+  </motion.button>
+</HashLink>
 
-              </motion.button>
             </motion.div>
           </motion.div>
 
