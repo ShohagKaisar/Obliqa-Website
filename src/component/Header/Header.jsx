@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import companyLogo from "../../assets/logo.svg";
-import { BotMessageSquare } from 'lucide-react';
+import whatsappIcon from "../../assets/whatsapp_icon.png"
 import Mobilemenu from "../MobileMenu/mobilemenu";
 import Menu from "../../shared/Menu";
 
@@ -28,7 +28,7 @@ const Header = () => {
 
             {/* Right side Mail Icon */}
             {/* <NavLink to={'/contact'} onClick={() => window.scrollTo(0, 0)} className="hidden lg:block px-4 hover:text-[#EC8314] py-2" href="mailto:contact@obliqa.com"></NavLink> */}
-            <a href="" className="hidden lg:block"><button><BotMessageSquare strokeWidth={1} /></button> </a>
+            <a href="https://wa.me/message/RAFUAZZGUL4KF1" target="_blank" className="hidden lg:block"><button><img className="h-7" src={whatsappIcon} alt="" /></button> </a>
             {/* Mobile Menu Button */}
             <Mobilemenu></Mobilemenu>
           </div>

@@ -13,9 +13,7 @@ const WhyChoseUs = () => {
         Expertise Across Technologies
       </h1>
       <p className="lg:text-xl max-md:2xl">
-        Proficiency in a wide range of cutting-edge technologies (HTML, React,
-        AWS, Docker, etc.) and ability to handle diverse projects like web,
-        mobile, CMS, and software.
+      Skilled in a broad spectrum of modern technologies including HTML, React, AWS, Docker, and more — enabling us to deliver robust solutions for websites, mobile apps, CMS platforms, and custom software.
       </p>
     </div>
     <div className="whychooseuscard lg:px-16 max-md:px-8 two">
@@ -28,26 +26,31 @@ const WhyChoseUs = () => {
       </p>
     </div>
     <div className="whychooseuscard lg:px-16 max-md:px-8 three">
-      <h1 className="pb-5 lg:text-6xl max-md:text-4xl">Proven Track Record</h1>
+      <h1 className="pb-5 lg:text-6xl max-md:text-4xl">Timely & Reliable Delivery</h1>
       <p className="lg:text-xl max-md:2xl">
-        Demonstrated success with past projects and satisfied clients,
-        reflecting reliability and capability.
+      We follow agile workflows and project timelines strictly to ensure on-time delivery without compromising quality.
       </p>
     </div>
     <div className="whychooseuscard lg:px-16 max-md:px-8 four">
-      <h1 className="pb-5 lg:text-6xl max-md:text-4xl">End-to-End Support</h1>
+      <h1 className="pb-5 lg:text-6xl max-md:text-4xl">Client-Focused Approach</h1>
       <p className="lg:text-xl max-md:2xl">
-        Comprehensive support throughout the entire project lifecycle from
-        planning and execution to maintenance and optimization.
+      Your goals are our top priority. We tailor every project to meet your unique business needs and ensure client satisfaction at every step.
       </p>
     </div>
     <div className="whychooseuscard lg:px-16 max-md:px-8 five z-20">
       <h1 className="pb-5 lg:text-6xl max-md:text-4xl">
-        Innovative and Future-Ready
+      Innovative Problem Solving
       </h1>
       <p className="lg:text-xl max-md:2xl">
-        Staying ahead with cutting-edge technologies and innovative practices to
-        ensure your business is prepared for future trends.
+      Our team doesn’t just code — we think. We offer smart, scalable solutions to real-world challenges using the latest tools and best practices.
+      </p>
+    </div>
+    <div className="whychooseuscard lg:px-16 max-md:px-8 six z-20">
+      <h1 className="pb-5 lg:text-6xl max-md:text-4xl">
+      End-to-End Service
+      </h1>
+      <p className="lg:text-xl max-md:2xl">
+      From idea to deployment and beyond, we provide complete service: consulting, design, development, testing, and post-launch support.
       </p>
     </div>
   </div>

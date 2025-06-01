@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import companyLogo from "../../assets/logo.svg";
 import { TiSocialFacebook, TiSocialLinkedin, TiSocialTwitter } from "react-icons/ti";
 
@@ -33,11 +34,11 @@ const Footer = () => {
             <h6 className="text-2xl font-bold mb-3 text-white uppercase tracking-wider">
               Information
             </h6>
-            <a className="link text-lg text-gray-300 link-hover ">Home</a>
-            <a className="link text-lg text-gray-300 link-hover">About us</a>
-            <a className="link text-lg text-gray-300 link-hover">Contact</a>
-            <a className="link text-lg text-gray-300 link-hover">Careers</a>
-            <a className="link text-lg text-gray-300 link-hover">Blog</a>
+            <NavLink to={'/'}>Home</NavLink>
+            <NavLink to={'/about'}>About</NavLink>
+            <NavLink to={'/ServiceDetails'}>Servcces</NavLink>
+            <NavLink to={'/projects'}>Portfolio</NavLink>
+            <NavLink to={'/contact'}>Contact Us</NavLink>
           </div>
           <div className="flex flex-col text-lg space-y-2">
             <h6 className="text-2xl font-bold mb-3 text-white uppercase tracking-wider ">
@@ -60,7 +61,7 @@ const Footer = () => {
                 <i className="fa-solid fa-phone" style={{ color: "#ffffff" }} />{" "}
                 Phone:{" "}
               </span>
-              <br /> +8801677056327
+              <br /> +8801706803616
             </p>
             <p className="text-gray-300">
               <span className="font-medium text-white">

@@ -41,42 +41,42 @@ export default function GetStartedSection() {
       title: "Our Services",
       content: "We offer Web Design, Web Development, SEO, Digital Marketting and IT Consultancy.",
       color: "bg-white",
-      icon: "💻",
+      icon: "/Icon/services.png",
       link: '/ServiceDetails'
     },
     {
       title: "How We Works",
       content: "Step-by-step: Consultation, Requirement Analysis, Development, Testing, Deployment.",
       color: "bg-white",
-      icon: "🔄",
+      icon: "/Icon/work-process.png",
       link: '/#how_we_work'
     },
     {
       title: "Pricing Plans",
       content: "Flexible pricing options to suit businesses of all sizes and budgets.",
       color: "bg-white",
-      icon: "💰",
+      icon: "/Icon/price.png",
       link: '/ServiceDetails'
     },
     {
       title: "Portfolio",
       content: "Explore our recent projects showcasing our expertise and client solutions.",
       color: "bg-white",
-      icon: "🎨",
+      icon: "/Icon/portfolio.png",
       link: '/Projects'
     },
     {
       title: "Testimonials",
       content: "Our clients love us! Read what they say about working with us.",
       color: "bg-white",
-      icon: "🌟",
+      icon: "/Icon/testimonials.png",
       link: '/ServiceDetails'
     },
     {
       title: "Contact Us",
       content: "Get in touch or book a free consultation with our expert team.",
       color: "bg-white",
-      icon: "📞",
+      icon: "/Icon/contact-us.png",
       link: '/ServiceDetails'
     },
   ];
@@ -115,7 +115,7 @@ export default function GetStartedSection() {
 
               <div className="p-8 h-full flex flex-col">
                 <div className="flex items-center mb-4">
-                  <span className="text-5xl ms-[-8px] mr-3">{section.icon}</span>
+                  <span className="w-10 ms-[-8px] mr-3"><img src={section.icon} alt="" /></span>
                   <h3 className="text-2xl font-bold text-[#263238]">{section.title}</h3>
                 </div>
                 <p className=" flex-grow text-[#717171]">{section.content}</p>

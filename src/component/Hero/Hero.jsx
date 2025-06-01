@@ -3,6 +3,7 @@ import { motion, useAnimation, useInView } from 'framer-motion';
 import video from '../../assets/Video/Hero_bg_video.mp4';
 import Video from '../../shared/Video';
 import { HashLink } from 'react-router-hash-link';
+import whatsappIcon from "../../assets/whatsapp_icon.png"
 
 const Hero = () => {
   const controls = useAnimation();
@@ -90,24 +91,23 @@ const Hero = () => {
             </motion.p>
 
             <motion.div variants={itemVariants} className="mt-8">
-            <HashLink
-  to="/#get-started"
-  smooth={true}
-  duration={500}
-  offset={-70}
->
-  <motion.button
-    className="px-8 py-3 bg-[#f27f20] rounded-full font-semibold text-white bg-gradient-to-r hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl"
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-  >
-    Get Started
-  </motion.button>
-</HashLink>
+              <HashLink
+                to="/#get-started"
+                smooth={true}
+                duration={500}
+                offset={-70}
+              >
+                <motion.button
+                  className="px-8 py-3 bg-[#f27f20] rounded-full font-semibold text-white bg-gradient-to-r hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  Get Started
+                </motion.button>
+              </HashLink>
 
             </motion.div>
           </motion.div>
-
 
           {/* Animated Scrolling Indicator */}
           <motion.div
@@ -122,18 +122,38 @@ const Hero = () => {
               ease: "easeInOut"
             }}
           >
-            <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-              <motion.div
-                className="w-1 h-2 bg-white rounded-full mt-1"
-                animate={{
-                  y: [0, 4, 0]
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-              />
+            <div className='hidden lg:block'>
+              <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
+                <motion.div
+                  className="w-1 h-2 bg-white rounded-full mt-1"
+                  animate={{
+                    y: [0, 4, 0]
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+              </div>
+            </div>
+            <div className='lg:hidden'>
+              <div className="w-12 h-12 rounded-full flex justify-center">
+                <motion.div
+                  className="rounded-full mt-1"
+                  animate={{
+                    y: [0, 4, 0]
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+              <div className='flex items-center justify-center'>
+              <img className='w-8 h-8' src={whatsappIcon} alt="" />
+              </div>
+              </div>
             </div>
           </motion.div>
         </motion.section>
