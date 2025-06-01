@@ -4,7 +4,7 @@ const WhyChoseUs = () => {
   return (
     <div>
       <div className="bg-white">
-  <div className="sticky top-[110px] flex justify-center text-5xl max-md:text-4xl font-bold my-8 w-[90%] mx-auto">
+  <div className="sticky top-[110px] flex justify-center text-5xl max-md:text-4xl font-bold my-12 w-[90%] mx-auto">
     <h1>Why Choose Us</h1>
   </div>
   <div className="whychooseus">
@@ -13,7 +13,7 @@ const WhyChoseUs = () => {
         Expertise Across Technologies
       </h1>
       <p className="lg:text-xl max-md:2xl">
-      Skilled in a broad spectrum of modern technologies including HTML, React, AWS, Docker, and more — enabling us to deliver robust solutions for websites, mobile apps, CMS platforms, and custom software.
+      Skilled in a broad spectrum of modern technologies including HTML, React, AWS, Docker, and more, enabling us to deliver robust solutions for websites, mobile apps, CMS platforms, and custom software.
       </p>
     </div>
     <div className="whychooseuscard lg:px-16 max-md:px-8 two">
@@ -42,7 +42,7 @@ const WhyChoseUs = () => {
       Innovative Problem Solving
       </h1>
       <p className="lg:text-xl max-md:2xl">
-      Our team doesn’t just code — we think. We offer smart, scalable solutions to real-world challenges using the latest tools and best practices.
+      Our team doesn’t just code, we think. We offer smart, scalable solutions to real-world challenges using the latest tools and best practices.
       </p>
     </div>
     <div className="whychooseuscard lg:px-16 max-md:px-8 six z-20">

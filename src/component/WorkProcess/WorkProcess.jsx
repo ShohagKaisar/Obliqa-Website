@@ -44,7 +44,7 @@ const WorkProcess = () => {
   ];
 
   return (
-    <section id="how_we_work" className="pt-28 pb-12 bg-[#F5F7FA] ">
+    <section id="how_we_work" className="py-8 bg-[#F5F7FA] ">
       <div className="container mx-auto px-6 max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
