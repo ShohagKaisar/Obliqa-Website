@@ -12,6 +12,8 @@ import ContactForm from './component/ContactForm/ContactForm.jsx';
 import Projects from './component/Projects/Projects.jsx';
 import ServiceDetails from './component/ServiceDetails/ServiceDetails.jsx';
 import WorkProcess from './component/WorkProcess/WorkProcess.jsx';
+import Testimonials from './component/Testimonials/Testimonials.jsx';
+import PricingPlans from './component/PricingPlans/PricingPlans.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,17 +32,25 @@ const router = createBrowserRouter([
         element: <ContactForm></ContactForm>
       },
       {
-        path: '/projects',
+        path: '/portfolio',
         element: <Projects></Projects>,
         loader: () => fetch('/projects.json')
       },
       {
-        path: '/ServiceDetails',
+        path: '/services',
         element: <ServiceDetails></ServiceDetails>
       },
       {
-        path: '/WorkProcess',
+        path: '/workProcess',
         element: <WorkProcess></WorkProcess>
+      },
+      {
+        path: '/testimonials',
+        element: <Testimonials></Testimonials>
+      },
+      {
+        path: '/pricing',
+        element: <PricingPlans></PricingPlans>
       },
     ]
   },

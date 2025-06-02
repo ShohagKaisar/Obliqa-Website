@@ -1,8 +1,7 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import Map from '../Map/Map';
-import { FiMapPin, FiPhone, FiMail, FiClock, FiSend } from "react-icons/fi";
-import { div } from "framer-motion/client";
+import { FiMapPin, FiPhone, FiMail, FiSend } from "react-icons/fi";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -119,7 +118,7 @@ const ContactForm = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center"
+                  className="w-full bg-orange-500 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center"
                 >
                   <FiSend className="mr-2" />
                   Send Message
@@ -140,7 +139,7 @@ const ContactForm = () => {
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="bg-blue-100 p-3 rounded-full mr-4">
-                    <FiMapPin className="text-blue-600" size={20} />
+                    <FiMapPin className="text-orange-600" size={20} />
                   </div>
                   <div>
                     <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-1">Address</h4>
@@ -150,7 +149,7 @@ const ContactForm = () => {
 
                 <div className="flex items-start">
                   <div className="bg-blue-100 p-3 rounded-full mr-4">
-                    <FiPhone className="text-blue-600" size={20} />
+                    <FiPhone className="text-orange-600" size={20} />
                   </div>
                   <div>
                     <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-1">Phone</h4>
@@ -160,7 +159,7 @@ const ContactForm = () => {
 
                 <div className="flex items-start">
                   <div className="bg-blue-100 p-3 rounded-full mr-4">
-                    <FiMail className="text-blue-600" size={20} />
+                    <FiMail className="text-orange-600" size={20} />
                   </div>
                   <div>
                     <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-1">Email</h4>

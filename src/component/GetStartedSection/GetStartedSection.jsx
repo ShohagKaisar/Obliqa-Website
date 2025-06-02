@@ -42,7 +42,7 @@ export default function GetStartedSection() {
       content: "We offer Web Design, Web Development, SEO, Digital Marketting and IT Consultancy.",
       color: "bg-white",
       icon: "/Icon/services.png",
-      link: '/ServiceDetails'
+      link: '/services'
     },
     {
       title: "How We Works",
@@ -56,28 +56,28 @@ export default function GetStartedSection() {
       content: "Flexible pricing options to suit businesses of all sizes and budgets.",
       color: "bg-white",
       icon: "/Icon/price.png",
-      link: '/ServiceDetails'
+      link: '/pricing'
     },
     {
       title: "Portfolio",
       content: "Explore our recent projects showcasing our expertise and client solutions.",
       color: "bg-white",
       icon: "/Icon/portfolio.png",
-      link: '/Projects'
+      link: '/portfolio'
     },
     {
       title: "Testimonials",
       content: "Our clients love us! Read what they say about working with us.",
       color: "bg-white",
       icon: "/Icon/testimonials.png",
-      link: '/ServiceDetails'
+      link: '/testimonials'
     },
     {
       title: "Contact Us",
       content: "Get in touch or book a free consultation with our expert team.",
       color: "bg-white",
       icon: "/Icon/contact-us.png",
-      link: '/ServiceDetails'
+      link: '/contact'
     },
   ];
 

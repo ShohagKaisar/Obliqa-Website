@@ -33,7 +33,7 @@ const Menu = ({ onItemClick }) => {
 
       </Link>
       <Link
-        to="/ServiceDetails"
+        to="/services"
       >
         <button
           onClick={handleClick}
@@ -43,9 +43,9 @@ const Menu = ({ onItemClick }) => {
         </button>
       </Link>
       <Link
-        to="/projects"
+        to="/portfolio"
       >
-               <button
+        <button
           onClick={handleClick}
           className="p-2 cursor-pointer hover:text-[#EC8314] hover:scale-110 transition-all duration-200 ease-in-out"
         >
@@ -57,7 +57,7 @@ const Menu = ({ onItemClick }) => {
         onClick={handleClick}
         className="hover:text-[#EC8314]"
       >
-                <button
+        <button
           onClick={handleClick}
           className="p-2 cursor-pointer hover:text-[#EC8314] hover:scale-110 transition-all duration-200 ease-in-out"
         >
