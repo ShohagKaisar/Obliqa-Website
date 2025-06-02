@@ -30,7 +30,7 @@ const AboutObliqa = () => {
   </motion.div>
 </section>
       {/* About Us Section */}
-      <section className="py-8 px-6">
+      <section className="py-4 px-4">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-2">About Us</h2>
           <p className="max-w-2xl mx-auto text-gray-600 text-justify">
@@ -46,7 +46,7 @@ const AboutObliqa = () => {
       </section>
 
       {/* Mission Section */}
-      <section className="py-8 px-6">
+      <section className="py-4 px-4">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-2">Our Mission</h2>
           <p className="max-w-2xl mx-auto text-gray-600 text-justify">
@@ -57,7 +57,7 @@ const AboutObliqa = () => {
       </section>
 
       {/* Services Section */}
-      <div className='px-24'>
+      <div className='px-4'>
         <ServiceDetails></ServiceDetails>
       </div>
       <GetInTouch></GetInTouch>

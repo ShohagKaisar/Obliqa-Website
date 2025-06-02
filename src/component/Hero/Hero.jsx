@@ -109,9 +109,9 @@ const Hero = () => {
             </motion.div>
           </motion.div>
 
-          {/* Animated Scrolling Indicator */}
+          {/* Animated Whatsapp Indicator */}
           <motion.div
-            className="absolute bottom-0 lg:bottom-10 left-10 lg:left-1/2 transform -translate-x-1/2"
+            className="absolute bottom-0 lg:bottom-10 left-10 lg:left-1/2 transform -translate-x-1/2 z-50"
             animate={{
               y: [0, 10, 0],
               opacity: [0.6, 1, 0.6]
@@ -122,7 +122,8 @@ const Hero = () => {
               ease: "easeInOut"
             }}
           >
-            <div className='hidden lg:block'>
+            {/* Desktop View */}
+            <div className="hidden lg:block">
               <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
                 <motion.div
                   className="w-1 h-2 bg-white rounded-full mt-1"
@@ -137,25 +138,20 @@ const Hero = () => {
                 />
               </div>
             </div>
-            <div className='lg:hidden'>
-              <div className="w-12 h-12 rounded-full flex justify-center">
-                <motion.div
-                  className="rounded-full mt-1"
-                  animate={{
-                    y: [0, 4, 0]
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                />
-              <div className='flex items-center justify-center'>
-              <img className='w-8 h-8' src={whatsappIcon} alt="" />
-              </div>
-              </div>
+
+            {/* Mobile View */}
+            <div className="lg:hidden relative z-50">
+              <a
+                href="https://wa.me/message/RAFUAZZGUL4KF1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-12 h-12 rounded-full bg-white/10 backdrop-blur-md flex justify-center items-center"
+              >
+                <img className="h-8 w-8" src={whatsappIcon} alt="WhatsApp Chat" />
+              </a>
             </div>
           </motion.div>
+
         </motion.section>
       </div>
     </div>

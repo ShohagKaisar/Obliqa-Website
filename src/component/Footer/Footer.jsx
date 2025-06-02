@@ -24,9 +24,6 @@ const Footer = () => {
             <h6 className="text-2xl font-bold mb-3 text-white  uppercase tracking-wider">
               Information
             </h6>
-            <a className="link text-md text-gray-300 link-hover">
-              Website Development
-            </a>
             <a className="link text-md text-gray-300 link-hover">Terms & Conditions</a>
             <a className="link text-md text-gray-300 link-hover">Privacy Policy</a>
             <a className="link text-md text-gray-300 link-hover">Accessibility Statement</a>
@@ -39,7 +36,7 @@ const Footer = () => {
             <div className="text-gray-300 flex flex-col space-y-2">
               <NavLink to={'/'}>Home</NavLink>
               <NavLink to={'/about'}>About</NavLink>
-              <NavLink to={'/ServiceDetails'}>Servcces</NavLink>
+              <NavLink to={'/ServiceDetails'}>Services</NavLink>
               <NavLink to={'/projects'}>Portfolio</NavLink>
               <NavLink to={'/contact'}>Contact Us</NavLink>
             </div>

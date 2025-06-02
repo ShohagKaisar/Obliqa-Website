@@ -1,10 +1,8 @@
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 
 
 const ServiceDetails = () => {
-  const navigate = useNavigate();
 
   const handleClick = () => {
     window.scrollTo(0, 0);
@@ -20,7 +18,7 @@ const ServiceDetails = () => {
         "API development & integration",
         "Database architecture"
       ],
-      color: "from-blue-500 to-blue-700",
+      color: "from-orange-400 via-orange-500 to-orange-400",
       icon: "💻"
     },
     {
@@ -32,7 +30,7 @@ const ServiceDetails = () => {
         "Technical SEO audits",
         "Backlink building"
       ],
-      color: "from-purple-500 to-purple-700",
+      color: "from-orange-400 via-orange-500 to-orange-400",
       icon: "🔍"
     },
     {
@@ -44,7 +42,7 @@ const ServiceDetails = () => {
         "Content marketing",
         "Conversion rate optimization"
       ],
-      color: "from-green-500 to-green-700",
+      color: "from-orange-400 via-orange-500 to-orange-400",
       icon: "📈"
     },
     {
@@ -56,7 +54,7 @@ const ServiceDetails = () => {
         "Cloud migration strategies",
         "IT security consulting"
       ],
-      color: "from-amber-500 to-amber-700",
+      color: "from-orange-400 via-orange-500 to-orange-400",
       icon: "🛠️"
     }
   ];
@@ -75,8 +73,8 @@ const ServiceDetails = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4 pt-32">
-      <div className="max-w-7xl mx-auto">
+    <div className="bg-gray-50 py-4 px-4">
+      <div className="mx-auto">
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -96,7 +94,7 @@ const ServiceDetails = () => {
               className="bg-white rounded-lg shadow-md overflow-hidden"
             >
               <div className={`h-2 bg-gradient-to-r ${service.color}`}></div>
-              <div className="p-6">
+              <div className="p-2 lg:p-6">
                 <div className="flex items-center mb-4">
                   <span className="text-2xl mr-3">{service.icon}</span>
                   <h2 className="text-xl font-semibold text-gray-800">{service.title}</h2>
@@ -122,11 +120,11 @@ const ServiceDetails = () => {
                 <NavLink to={'/contact'}>
                   <button
                     onClick={handleClick}
-                    className="w-full py-2 bg-gray-800 text-white rounded hover:bg-gray-700 transition"
+                    className="w-full py-2 bg-orange-500 text-white rounded hover:bg-gray-700 transition"
                   >
                     Get in Touch
                   </button>
-</NavLink>
+                </NavLink>
               </div>
             </motion.div>
           ))}
