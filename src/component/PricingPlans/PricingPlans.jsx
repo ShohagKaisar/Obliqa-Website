@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { FiSend } from "react-icons/fi";
 import emailjs from 'emailjs-com';
+import { NavLink } from "react-router-dom";
 
 const plans = [
   {
@@ -89,7 +90,7 @@ const PricingPlans = () => {
   };
 
   return (
-    <section className="bg-white pt-12 px-6 md:px-12 lg:px-24 mt-10">
+    <section className="bg-white pt-12 px-6 md:px-12 lg:px-24 mb-4 mt-10">
       <div className="max-w-6xl mx-auto text-center mb-8">
         <h2 className="text-4xl font-bold text-gray-800 mb-2">Our Pricing Plans</h2>
         <p className="text-gray-600">Affordable solutions to grow your digital presence</p>
@@ -120,15 +121,17 @@ const PricingPlans = () => {
                 </li>
               ))}
             </ul>
-            <button className="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded font-semibold transition">
-              Get Started
-            </button>
+            <NavLink to={'/contact'}>
+              <button className="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded font-semibold transition">
+                Get Started
+              </button>
+            </NavLink>
           </div>
         ))}
       </div>
 
       {/* Custom Plan Request Form */}
-      <div className="w-full px-8 md:p-8">
+      <div className="mt-6 w-full p-4 md:p-8">
         <div className="flex flex-col items-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-2">Custom Plan</h2>
           <p className="text-gray-600 mb-8">
