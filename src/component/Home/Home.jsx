@@ -6,6 +6,7 @@ import WhyChoseUs from '../WhyChoseUs/WhyChoseUs';
 import GetStartedSection from '../GetStartedSection/GetStartedSection';
 import GetInTouch from '../../shared/GetInTouch';
 import WorkProcess from '../WorkProcess/WorkProcess';
+import PricingPlans from '../PricingPlans/PricingPlans';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <GetStartedSection></GetStartedSection>
       <WorkProcess></WorkProcess>
       <WhyChoseUs></WhyChoseUs>
+      <PricingPlans></PricingPlans>
       <GetInTouch></GetInTouch>
       {/* <Map></Map> */}
     </div>

@@ -89,13 +89,13 @@ const PricingPlans = () => {
   };
 
   return (
-    <section className="bg-white py-20 px-6 md:px-12 lg:px-24 mt-12">
-      <div className="max-w-6xl mx-auto text-center mb-16">
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Pricing Plans</h2>
+    <section className="bg-white pt-12 px-6 md:px-12 lg:px-24 mt-10">
+      <div className="max-w-6xl mx-auto text-center mb-8">
+        <h2 className="text-4xl font-bold text-gray-800 mb-2">Our Pricing Plans</h2>
         <p className="text-gray-600">Affordable solutions to grow your digital presence</p>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-8 mb-20">
+      <div className="grid md:grid-cols-3 gap-8 mb-2">
         {plans.map((plan, idx) => (
           <div
             key={idx}
@@ -128,26 +128,44 @@ const PricingPlans = () => {
       </div>
 
       {/* Custom Plan Request Form */}
-      <div className="w-full p-8 md:p-12">
-        <h2 className="text-3xl font-bold text-gray-800 mb-2">Custom Plan</h2>
-        <p className="text-gray-600 mb-8">
-          Tell us your goals, and we'll build a solution that fits your needs and budget.
-        </p>
+      <div className="w-full px-8 md:p-8">
+        <div className="flex flex-col items-center">
+          <h2 className="text-3xl font-bold text-gray-800 mb-2">Custom Plan</h2>
+          <p className="text-gray-600 mb-8">
+            Tell us your goals, and we'll build a solution that fits your needs and budget.
+          </p>
+        </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
-          <div>
-            <label className="block text-gray-700 text-sm font-medium mb-2" htmlFor="name">
-              Name
-            </label>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-              placeholder="e.g. John Doe"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400"
-            />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label className="block text-gray-700 text-sm font-medium mb-2" htmlFor="name">
+                Name
+              </label>
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+                placeholder="e.g. John Doe"
+                className="w-full px-4 py-3 border border-black rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400"
+              />
+            </div>
+            <div>
+              <label className="block text-gray-700 text-sm font-medium mb-2" htmlFor="email">
+                Email
+              </label>
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                placeholder="e.g. example@domain.com"
+                className="w-full px-4 py-3 border border-black rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400"
+              />
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -162,39 +180,26 @@ const PricingPlans = () => {
                 onChange={handleChange}
                 required
                 placeholder="e.g. +880 1234 567890"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400"
+                className="w-full px-4 py-3 border border-black rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400"
+              />
+            </div>
+            <div>
+              <label className="block text-gray-700 text-sm font-medium mb-2" htmlFor="name">
+                Your Budget Range
+              </label>
+              <input
+                type="text"
+                name="price"
+                value={formData.price}
+                onChange={handleChange}
+                required
+                placeholder="e.g. 10000 - 50000 BDT or USD"
+                className="w-full px-4 py-3 border border-black rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400"
               />
             </div>
 
-            <div>
-              <label className="block text-gray-700 text-sm font-medium mb-2" htmlFor="email">
-                Email
-              </label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                placeholder="e.g. example@domain.com"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400"
-              />
-            </div>
           </div>
-          <div>
-            <label className="block text-gray-700 text-sm font-medium mb-2" htmlFor="name">
-              Price Range
-            </label>
-            <input
-              type="text"
-              name="price"
-              value={formData.price}
-              onChange={handleChange}
-              required
-              placeholder="e.g. 10000 - 50000 BDT or USD"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400"
-            />
-          </div>
+
           <div>
             <label className="block text-gray-700 text-sm font-medium mb-2" htmlFor="message">
               Plan Description
@@ -206,7 +211,7 @@ const PricingPlans = () => {
               required
               rows="5"
               placeholder="Describe your requirements..."
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400"
+              className="w-full px-4 py-3 border border-black rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400"
             ></textarea>
           </div>
 

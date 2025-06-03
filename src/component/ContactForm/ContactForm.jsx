@@ -65,7 +65,7 @@ const ContactForm = () => {
                     onChange={handleChange}
                     required
                     placeholder="e.g. John Doe"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400"
+                    className="w-full px-4 py-3 border border-gray-500 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400"
                   />
                 </div>
 
@@ -81,7 +81,7 @@ const ContactForm = () => {
                       onChange={handleChange}
                       required
                       placeholder="e.g. +880 1234 567890"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400"
+                      className="w-full px-4 py-3 border border-gray-500 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400"
                     />
                   </div>
 
@@ -96,7 +96,7 @@ const ContactForm = () => {
                       onChange={handleChange}
                       required
                       placeholder="e.g. example@domain.com"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400"
+                      className="w-full px-4 py-3 border border-gray-500 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400"
                     />
                   </div>
                 </div>
@@ -112,7 +112,7 @@ const ContactForm = () => {
                     required
                     rows="5"
                     placeholder="Tell us about your project or inquiry..."
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400"
+                    className="w-full px-4 py-3 border border-gray-500 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400"
                   ></textarea>
                 </div>
 
