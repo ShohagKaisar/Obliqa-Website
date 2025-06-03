@@ -78,7 +78,7 @@ const Hero = () => {
               className="pt-24 lg:pt-0 text-3xl lg:text-5xl md:text-7xl font-bold mb-6"
               variants={itemVariants}
             >
-              <span className="text-transparent bg-clip-text bg-white">
+              <span className="text-white bg-clip-text bg-white">
                 OBLIQA IT Solution
               </span>
             </motion.h1>
