@@ -143,7 +143,7 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-1">Address</h4>
-                    <p className="text-gray-700">Gazipur, Dhaka, Bangladesh</p>
+                    <p className="text-gray-700">Dhaka, Bangladesh</p>
                   </div>
                 </div>
 
@@ -153,7 +153,7 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-1">Phone</h4>
-                    <p className="text-gray-700">+8801677056327</p>
+                    <p className="text-gray-700">+880 170 680 3616</p>
                   </div>
                 </div>
 

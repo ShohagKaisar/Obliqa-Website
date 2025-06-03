@@ -16,14 +16,14 @@ const ServiceDetails = () => {
         "Custom web application development",
         "E-commerce solutions",
         "API development & integration",
-        "Database architecture"
+        "Database architecture",
       ],
       color: "from-orange-400 via-orange-500 to-orange-400",
       icon: "💻"
     },
     {
       title: "SEO Services",
-      description: "Comprehensive search engine optimization services designed to significantly improve your website's visibility, boost organic traffic, enhance search rankings.",
+      description: "Comprehensive SEO services to boost your website’s visibility, increase organic traffic, and improve search rankings.",
       features: [
         "Keyword research & strategy",
         "On-page optimization",
@@ -73,12 +73,12 @@ const ServiceDetails = () => {
   };
 
   return (
-    <div className="bg-gray-50 py-4 px-4 mt-20">
+    <div className="bg-gray-50 mx-4 lg:mx-24 py-8 px-4 mt-20">
       <div className="mx-auto">
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="text-3xl font-bold text-center mb-8 text-gray-800"
+          className="text-4xl md:text-5xl font-bold text-center mb-8 text-gray-800"
         >
           Our Professional Services
         </motion.h1>
@@ -97,7 +97,7 @@ const ServiceDetails = () => {
               <div className="p-2 lg:p-6">
                 <div className="flex items-center mb-4">
                   <span className="text-2xl mr-3">{service.icon}</span>
-                  <h2 className="text-xl font-semibold text-gray-800">{service.title}</h2>
+                  <h2 className="text-2xl font-semibold text-gray-800">{service.title}</h2>
                 </div>
 
                 <p className="text-gray-600 mb-4">{service.description}</p>
@@ -120,7 +120,7 @@ const ServiceDetails = () => {
                 <NavLink to={'/contact'}>
                   <button
                     onClick={handleClick}
-                    className="w-full py-2 bg-orange-500 text-white rounded hover:bg-gray-700 transition"
+                    className="w-full py-2 bg-orange-500 text-white rounded-full hover:bg-gray-700 transition"
                   >
                     Get in Touch
                   </button>

@@ -24,28 +24,28 @@ const Footer = () => {
             <h6 className="text-2xl font-bold mb-3 text-white  uppercase tracking-wider">
               Information
             </h6>
-            <a className="link text-md text-gray-300 link-hover">Terms & Conditions</a>
-            <a className="link text-md text-gray-300 link-hover">Privacy Policy</a>
-            <a className="link text-md text-gray-300 link-hover">Accessibility Statement</a>
-            <a className="link text-md text-gray-300 link-hover">Anti Slavery</a>
+            <a className="text-xl link text-md text-gray-300 link-hover">Terms & Conditions</a>
+            <a className="text-xl link text-md text-gray-300 link-hover">Privacy Policy</a>
+            <a className="text-xl link text-md text-gray-300 link-hover">Accessibility Statement</a>
+            <a className="text-xl link text-md text-gray-300 link-hover">Anti Slavery</a>
           </div>
           <div className="flex flex-col space-y-2 mb-5">
             <h6 className="text-2xl font-bold mb-3 text-white uppercase tracking-wider">
               Quick Links
             </h6>
-            <div className="text-gray-300 flex flex-col space-y-2">
-              <NavLink to={'/'}>Home</NavLink>
-              <NavLink to={'/about'}>About</NavLink>
-              <NavLink to={'/Services'}>Services</NavLink>
-              <NavLink to={'/portfolio'}>Portfolio</NavLink>
-              <NavLink to={'/contact'}>Contact Us</NavLink>
+            <div className="text-gray-300 flex flex-col space-y-2 text-xl">
+              <div className="link-hover"><NavLink to={'/'}>Home</NavLink></div>
+              <div className="link-hover"><NavLink to={'/about'}>About</NavLink></div>
+              <div className="link-hover"><NavLink to={'/Services'}>Services</NavLink></div>
+              <div className="link-hover"><NavLink to={'/portfolio'}>Portfolio</NavLink></div>
+              <div className="link-hover"><NavLink to={'/contact'}>Contact Us</NavLink></div>
             </div>
           </div>
           <div className="flex flex-col text-lg space-y-2">
             <h6 className="text-2xl font-bold mb-3 text-white uppercase tracking-wider ">
               Contact Info
             </h6>
-            <p className="text-gray-300">
+            <p className="text-gray-300 text-xl">
               {" "}
               <span className="font-medium text-white">
                 <i
@@ -57,14 +57,14 @@ const Footer = () => {
               <br />
               Dhaka, Bangladesh
             </p>
-            <p className="text-gray-300">
+            <p className="text-gray-300 text-xl">
               <span className="font-medium text-white">
                 <i className="fa-solid fa-phone" style={{ color: "#ffffff" }} />{" "}
                 Phone:{" "}
               </span>
               <br /> +880 170 680 3616
             </p>
-            <p className="text-gray-300">
+            <p className="text-gray-300 text-xl">
               <span className="font-medium text-white">
                 <i className="fa-solid fa-envelope" style={{ color: "#ffffff" }} />{" "}
                 Email:{" "}

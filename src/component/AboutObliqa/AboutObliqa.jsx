@@ -32,8 +32,8 @@ const AboutObliqa = () => {
       {/* About Us Section */}
       <section className="py-4 px-4">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-2">About Us</h2>
-          <p className="max-w-2xl mx-auto text-gray-600 text-justify">
+          <h2 className="text-3xl md:text-5xl font-bold my-6">About Us</h2>
+          <p className="max-w-4xl mx-auto text-gray-600 text-justify">
             At Obliqa IT Solution, we stand for excellence, faith, and innovation. As a startup company, we bring fresh ideas and a dynamic approach to the ever-evolving tech industry. We don’t just take on projects, we take our clients visions seriously, turning their ideas into success stories.
 
             Technology should empower businesses, not just support them. That’s why we go beyond coding. We strategize, innovate, and deliver solutions that truly make a difference. Whether it’s a small startup or a large enterprise, our expert development team is ready to build, scale, and optimize with cutting-edge technology.
@@ -48,8 +48,8 @@ const AboutObliqa = () => {
       {/* Mission Section */}
       <section className="py-4 px-4">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-2">Our Mission</h2>
-          <p className="max-w-2xl mx-auto text-gray-600 text-justify">
+          <h2 className="text-3xl lg:text-5xl font-bold my-6">Our Mission</h2>
+          <p className="max-w-4xl mx-auto text-gray-600 text-justify">
             At OBLIQA IT Solutions, our mission is to empower businesses of all sizes by delivering cutting-edge, scalable, and intuitive digital solutions that drive growth and efficiency. We are committed to helping our clients thrive in an increasingly digital world by offering customized services in web development, mobile applications, digital marketing, and cloud-based technologies.
             Through continuous innovation, a client-first mindset, and a deep understanding of emerging trends, we aim to transform ideas into impactful digital experiences. Our goal is not only to solve current challenges but to anticipate future opportunities enabling our clients to stay ahead in a competitive marketplace.
           </p>

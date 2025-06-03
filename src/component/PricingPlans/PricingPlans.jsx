@@ -92,7 +92,7 @@ const PricingPlans = () => {
   return (
     <section className="bg-white pt-12 px-6 md:px-12 lg:px-24 mb-4 mt-10">
       <div className="max-w-6xl mx-auto text-center mb-8">
-        <h2 className="text-4xl font-bold text-gray-800 mb-2">Our Pricing Plans</h2>
+        <h2 className="text-5xl font-bold text-gray-800 mb-2">Our Pricing Plans</h2>
         <p className="text-gray-600">Affordable solutions to grow your digital presence</p>
       </div>
 
@@ -122,7 +122,7 @@ const PricingPlans = () => {
               ))}
             </ul>
             <NavLink to={'/contact'}>
-              <button className="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded font-semibold transition">
+              <button className="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded-full font-semibold transition">
                 Get Started
               </button>
             </NavLink>

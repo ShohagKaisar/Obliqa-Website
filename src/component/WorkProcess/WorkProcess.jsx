@@ -7,44 +7,49 @@ import {
   FiUploadCloud,
   FiSettings,
 } from "react-icons/fi";
-import { NavLink } from "react-router-dom";
 
 const WorkProcess = () => {
   const steps = [
     {
-      title: "Discovery Phase",
-      description: "We conduct in-depth interviews and workshops to fully understand your business objectives, challenges, and technical requirements.",
-      icon: <FiUsers className="text-indigo-600" size={36} />
+      title: "Phase 1: Discovery",
+      description:
+        "We engage in comprehensive interviews and workshops to gain a deep understanding of your business objectives, challenges, and technical requirements.",
+      icon: <FiUsers className="text-indigo-600" size={36} />,
     },
     {
-      title: "Strategic Planning",
-      description: "Our team creates a comprehensive project roadmap with milestones, deliverables, and success metrics tailored to your goals.",
-      icon: <FiClipboard className="text-blue-600" size={36} />
+      title: "Phase 2: Strategic Roadmap",
+      description:
+        "Our team develops a detailed project plan, outlining key milestones, deliverables, and success metrics aligned with your strategic goals.",
+      icon: <FiClipboard className="text-blue-600" size={36} />,
     },
     {
-      title: "System Design",
-      description: "We architect scalable solutions with intuitive interfaces, robust APIs, and optimized database structures for peak performance.",
-      icon: <FiSettings className="text-emerald-600" size={36} />
+      title: "Phase 3: System Architecture",
+      description:
+        "We design scalable, high-performance solutions, incorporating intuitive user interfaces, robust APIs, and optimized database structures.",
+      icon: <FiSettings className="text-emerald-600" size={36} />,
     },
     {
-      title: "Agile Development",
-      description: "Using iterative sprints, we build your solution with modern frameworks while maintaining clean, documented code.",
-      icon: <FiCode className="text-amber-600" size={36} />
+      title: "Phase 4: Agile Implementation",
+      description:
+        "Through iterative development sprints, we build your solution using modern frameworks, ensuring clean, well-documented code.",
+      icon: <FiCode className="text-amber-600" size={36} />,
     },
     {
-      title: "Quality Assurance",
-      description: "Our rigorous testing protocol includes unit tests, integration tests, and user acceptance testing to ensure reliability.",
-      icon: <FiCheckCircle className="text-purple-600" size={36} />
+      title: "Phase 5: Quality Assurance",
+      description:
+        "We execute a thorough testing regimen, including unit tests, integration tests, and user acceptance testing, to guarantee reliability and performance.",
+      icon: <FiCheckCircle className="text-purple-600" size={36} />,
     },
     {
-      title: "Deployment & Support",
-      description: "We handle seamless deployment with monitoring setup and provide ongoing maintenance with performance analytics.",
-      icon: <FiUploadCloud className="text-rose-600" size={36} />
-    }
+      title: "Phase 6: Deployment & Support",
+      description:
+        "We manage seamless deployment with integrated monitoring and provide continuous maintenance, supported by detailed performance analytics.",
+      icon: <FiUploadCloud className="text-rose-600" size={36} />,
+    },
   ];
 
   return (
-    <section id="how_we_work" className="py-8 bg-[#F5F7FA] ">
+    <section id="how_we_work" className="py-8 bg-[#F5F7FA]">
       <div className="container mx-auto px-6 max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -60,7 +65,8 @@ const WorkProcess = () => {
             Transparent Development Methodology
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Each phase is carefully executed to deliver exceptional results on time and within budget.
+            Each phase is carefully executed to deliver exceptional results on
+            time and within budget.
           </p>
         </motion.div>
 
@@ -74,26 +80,23 @@ const WorkProcess = () => {
               viewport={{ once: true, margin: "-50px" }}
               className="relative"
             >
-              {/* Mobile connector */}
-
-              <div className="bg-white p-8  rounded-xl shadow-md hover:shadow-lg transition-all duration-300 h-full">
+              <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 h-full">
                 <div className="flex flex-col items-start mb-6 space-y-3">
-                  <div className="  p-2 rounded-lg bg-indigo-50 mr-4 flex-shrink-0">
+                  <div className="p-2 rounded-lg bg-indigo-50 mr-4 flex-shrink-0">
                     {step.icon}
                     <div className="flex items-center mb-1">
-                      <span className="text-xs font-mono text-gray-400 mr-2">Step {index + 1}</span>
+                      <span className="text-xs font-mono text-gray-400 mr-2">
+                        Step {index + 1}
+                      </span>
                     </div>
                   </div>
                   <div>
-                    
                     <h3 className="text-2xl mb-2 font-semibold text-[#263238] leading-tight">
                       {step.title}
                     </h3>
                   </div>
                 </div>
-                <p className="text-[#717171]  -mt-5">
-                  {step.description}
-                </p>
+                <p className="text-[#717171] -mt-5">{step.description}</p>
               </div>
             </motion.div>
           ))}
@@ -106,11 +109,6 @@ const WorkProcess = () => {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          {/* <NavLink to={'/contact'}>
-            <button onClick={() => window.scrollTo(0, 0)} className="px-8 py-3.5 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg transition-all duration-200 hover:shadow-lg shadow-indigo-500/20">
-              Begin Your Project Journey
-            </button>
-</NavLink> */}
         </motion.div>
       </div>
     </section>
