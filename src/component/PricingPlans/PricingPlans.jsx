@@ -70,10 +70,10 @@ const PricingPlans = () => {
 
     emailjs
       .send(
-        "service_wtov8ck",
-        "template_syejxgv",
+        "service_ry6rlfd",
+        "template_j8bx9dc",
         formData,
-        "6ToSd4r0vmxRi_zYC"
+        "0YllvmGmbCyANgFRr"
       )
       .then(
         (response) => {
