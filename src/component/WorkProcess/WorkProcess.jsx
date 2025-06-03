@@ -61,7 +61,7 @@ const WorkProcess = () => {
           <span className="text-sm font-semibold tracking-wider text-[#263238] uppercase">
             Our 6-Step Process
           </span>
-          <h2 className="lg:text-5xl text-4xl font-bold text-gray-900 mt-3 mb-4">
+          <h2 className="lg:text-5xl text-4xl font-bold text-gray-800 mt-3 mb-4">
             Transparent Development Methodology
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">

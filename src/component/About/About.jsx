@@ -12,7 +12,7 @@ const About = () => {
               className="flex justify-center lg:mt-10 lg:w-[50%]"
               data-aos="fade-right"
               data-aos-mirror="true"
-              
+
             >
               <img
                 src={companyLogo}
@@ -20,13 +20,13 @@ const About = () => {
               />
             </div>
             <div className="lg:w-3/4 ">
-              <h1 className="text-5xl max-sm:text-center font-bold text-gray-900 z-10  mb-5">
+              <h1 className="text-5xl max-sm:text-center font-bold text-gray-800 z-10  mb-5">
                 About
               </h1>
               <p className="py-6 text-justify text-[#717171]">
-              At Obliqa IT Solution, we stand for excellence, faith, and innovation. As a startup company, we bring fresh ideas and a dynamic approach to the ever-evolving tech industry. We don’t just take on projects, we take our clients visions seriously, turning their ideas into success stories. Technology should empower businesses, not just support them. That’s why we go beyond coding. We strategize, innovate, and deliver solutions that truly make a difference. Whether it’s a small startup or a large enterprise, our expert development team is ready to build, scale, and optimize with cutting-edge technology. But we’re not stopping here. Our mission is bigger. We aim to make Obliqa IT a globally recognized technology leader known for delivering solutions that redefine industries while keeping client satisfaction at the heart of everything we do. Let’s build the future together.
+                At Obliqa IT Solution, we stand for excellence, faith, and innovation. As a startup company, we bring fresh ideas and a dynamic approach to the ever-evolving tech industry. We don’t just take on projects, we take our clients visions seriously, turning their ideas into success stories. Technology should empower businesses, not just support them. That’s why we go beyond coding. We strategize, innovate, and deliver solutions that truly make a difference. Whether it’s a small startup or a large enterprise, our expert development team is ready to build, scale, and optimize with cutting-edge technology. But we’re not stopping here. Our mission is bigger. We aim to make Obliqa IT a globally recognized technology leader known for delivering solutions that redefine industries while keeping client satisfaction at the heart of everything we do. Let’s build the future together.
               </p>
-                {/* <NavLink to={'/about'}>
+              {/* <NavLink to={'/about'}>
                 <div className="flex items-center max-md:justify-center">
                 <button className="btn bg-[#28CB8B]  text-white text-xl">
                   About OBLIQA

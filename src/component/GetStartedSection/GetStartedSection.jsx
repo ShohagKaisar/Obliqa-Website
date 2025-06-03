@@ -89,8 +89,8 @@ export default function GetStartedSection() {
         transition={{ duration: 0.6 }}
         className="text-center mb-8"
       >
-        <h2 className="text-4xl md:text-5xl py-3 font-bold bg-clip-text text-gray-900 bg-[#263238] mb-2">
-        Start Your Journey
+        <h2 className="text-4xl md:text-5xl py-3 font-bold bg-clip-text text-gray-800 bg-[#263238] mb-2">
+          Start Your Journey
         </h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           Discover how we can help transform your digital presence with our comprehensive services.
@@ -121,7 +121,7 @@ export default function GetStartedSection() {
                 <p className=" flex-grow text-[#717171]">{section.content}</p>
                 <HashLink
                   to={section.link}
-                  smooth={true} 
+                  smooth={true}
                   duration={500}
                   offset={-70}
                 >
