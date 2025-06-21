@@ -70,9 +70,9 @@ const GlobeViewer = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <h2 className="flex items-center gap-2 text-2xl sm:text-3xl font-bold text-orange-500">
-            We Serve Clients Globally <GiWorld />
-          </h2>
+          <p className="flex items-center justify-items-start gap-2 text-2xl sm:text-xl font-bold text-orange-500">
+            We Serve Clients Globally <span><GiWorld /></span>
+          </p>
 
           <p className="text-base sm:text-lg text-black leading-relaxed">
             From <span className="text-orange-500 font-semibold">Dhaka, Bangladesh</span>, we empower businesses worldwide with fast,
