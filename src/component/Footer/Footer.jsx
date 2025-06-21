@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import companyLogo from "../../assets/logo.svg";
-import { TiSocialFacebook, TiSocialLinkedin, TiSocialTwitter } from "react-icons/ti";
+import { TiSocialFacebook, TiSocialInstagram, TiSocialInstagramCircular, TiSocialLinkedin, TiSocialTwitter } from "react-icons/ti";
 
 const Footer = () => {
   return (
@@ -15,7 +15,7 @@ const Footer = () => {
                 </a>
                 <a className="text-3xl" href="https://www.linkedin.com/company/obliqa-it-solutions/" target="_blank"><TiSocialLinkedin />
                 </a>
-                <a className="text-3xl" href="#" target="_blank"><TiSocialTwitter />
+                <a className="text-3xl" href="https://www.instagram.com/obliqa_it_solutions/?igsh=MWlpNTU1b3k5eGtybg%3D%3D#" target="_blank"><TiSocialInstagram />
                 </a>
               </div>
             </nav>
