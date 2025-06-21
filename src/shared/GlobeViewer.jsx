@@ -1,30 +1,32 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import Globe from 'globe.gl';
 import { motion } from 'framer-motion';
 import { GiWorld } from 'react-icons/gi';
-
+import { NavLink } from 'react-router-dom'
 const GlobeViewer = () => {
   const globeRef = useRef();
 
   useEffect(() => {
     const world = Globe()(globeRef.current)
-      .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-night.jpg')
+      .globeImageUrl('https://cdn.jsdelivr.net/npm/three-globe/example/img/earth-blue-marble.jpg')
       .bumpImageUrl('https://unpkg.com/three-globe/example/img/earth-topology.png')
-      .backgroundImageUrl('https://unpkg.com/three-globe/example/img/night-sky.png')
-      .backgroundColor('#000000')
+      // .backgroundImageUrl('https://unpkg.com/three-globe/example/img/night-sky.png')
+      .backgroundColor('#FFFFFF')
       .showAtmosphere(true)
-      .atmosphereColor('#3a228a')
+      .atmosphereColor('#FFFFFF')
       .atmosphereAltitude(0.25)
       .pointsData([
         {
           lat: 23.8103,
           lng: 90.4125,
-          name: 'Dhaka, Bangladesh'
+          name: 'Dhaka, Bangladesh',
+          // obliqa: 'We are based in Dhaka, Bangladesh, serving clients globally.',
         }
       ])
       .pointLat('lat')
       .pointLng('lng')
       .pointLabel('name')
+      // .labelLabel('obliqa')
       .pointAltitude(0.03)
       .pointColor(() => '#ff5722');
 
@@ -49,11 +51,11 @@ const GlobeViewer = () => {
   }, []);
 
   return (
-    <section className="bg-white py-12 px-4 sm:px-6 lg:px-12 xl:px-20">
-      <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+    <section className="bg-white py-12 ">
+      <div className="mx-auto max-w-fit grid lg:grid-cols-2 grid-cols-1 justify-center gap-10 items-center">
         {/* Globe Container */}
         <motion.div
-          className="w-full h-[300px] sm:h-[300px] md:h-[300px] lg:h-[270px]"
+          className="w-full lg:h-[600px] h-[400px] mx-5"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
@@ -64,28 +66,23 @@ const GlobeViewer = () => {
 
         {/* Description with animation */}
         <motion.div
-          className="space-y-4"
+          className="space-y-4 mx-5"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <p className="flex items-center justify-items-start gap-2 text-2xl sm:text-xl font-bold text-orange-500">
-            We Serve Clients Globally <span><GiWorld /></span>
+          <p className="flex items-center justify-items-start gap-2 text-4xl font-bold text-gray-800 ">
+            We Serve Clients Globally<span><GiWorld /></span>
           </p>
 
-          <p className="text-base sm:text-lg text-black leading-relaxed">
-            From <span className="text-orange-500 font-semibold">Dhaka, Bangladesh</span>, we empower businesses worldwide with fast,
+          <p className="text-base sm:text-xl text-black leading-relaxed">
+            From <span className="text-orange-500 font-semibold">Bangladesh</span>, we empower businesses worldwide<br></br> with fast,
             reliable, and scalable digital solutions.
           </p>
-
-          <ul className="space-y-1 text-black text-sm sm:text-base">
-            <li>✅ Web Development (React, Next.js, WordPress)</li>
-            <li>✅ SEO & Digital Marketing</li>
-            <li>✅ E-commerce & CMS Solutions</li>
-            <li>✅ API Integration & App Deployment</li>
-            <li>✅ 24/7 Maintenance & Support</li>
-          </ul>
+          <NavLink onClick={() => window.scrollTo(0, 0)} to={'/contact'}>
+          <button className='px-8 py-3 bg-[#f27f20] rounded-full font-semibold text-white bg-gradient-to-r hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl '>Get Your Service Now</button>
+          </NavLink>
         </motion.div>
       </div>
     </section>
