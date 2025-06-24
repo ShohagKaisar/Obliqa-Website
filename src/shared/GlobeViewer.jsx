@@ -65,7 +65,7 @@ const GlobeViewer = () => {
   }, []);
 
   return (
-    <section className="bg-white">
+    <section className="bg-transparent">
       <div className="mx-auto max-w-fit grid lg:grid-cols-2 grid-cols-1 justify-center gap-10 items-center">
         {/* Globe Container */}
         <motion.div
