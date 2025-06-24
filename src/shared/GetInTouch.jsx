@@ -5,7 +5,7 @@ const GetInTouch = () => {
   return (
     <div className='mt-4'>
       {/* Call to Action Section */}
-        <section className="py-16 text-center px-6">
+        <section className="py-8 text-center px-6">
           <div className="container mx-auto">
             <h2 className="lg:text-5xl text-3xl font-bold mb-4 text-gray-800">Ready to Transform Your Business?</h2>
             <p className="max-w-xl mx-auto text-[#717171] mb-6">

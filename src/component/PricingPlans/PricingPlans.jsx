@@ -30,7 +30,7 @@ const plans = [
     name: "Business",
     priceBDT: "৳35,000",
     priceUSD: "$315",
-    description: "Professional website for SMEs.",
+    description: "Professional website with SEO for SMEs.",
     features: ["CMS Integration", "Newsletter & Lead Forms", "On-page SEO", "Facebook Pixel Setup"]
   },
   {

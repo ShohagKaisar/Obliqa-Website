@@ -2,7 +2,8 @@ import { useEffect, useRef } from 'react';
 import Globe from 'globe.gl';
 import { motion } from 'framer-motion';
 import { GiWorld } from 'react-icons/gi';
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
+
 const GlobeViewer = () => {
   const globeRef = useRef();
 
@@ -10,25 +11,38 @@ const GlobeViewer = () => {
     const world = Globe()(globeRef.current)
       .globeImageUrl('https://cdn.jsdelivr.net/npm/three-globe/example/img/earth-blue-marble.jpg')
       .bumpImageUrl('https://unpkg.com/three-globe/example/img/earth-topology.png')
-      // .backgroundImageUrl('https://unpkg.com/three-globe/example/img/night-sky.png')
       .backgroundColor('#FFFFFF')
       .showAtmosphere(true)
       .atmosphereColor('#FFFFFF')
       .atmosphereAltitude(0.25)
+
+      // Point marker
       .pointsData([
         {
           lat: 23.8103,
           lng: 90.4125,
-          name: 'Dhaka, Bangladesh',
-          // obliqa: 'We are based in Dhaka, Bangladesh, serving clients globally.',
         }
       ])
       .pointLat('lat')
       .pointLng('lng')
-      .pointLabel('name')
-      // .labelLabel('obliqa')
-      .pointAltitude(0.03)
-      .pointColor(() => '#ff5722');
+      .pointAltitude(0.01)
+      .pointColor(() => '#ff5722')
+
+      // ✅ Label showing always on the globe
+      .labelsData([
+        {
+          lat: 23.8103,
+          lng: 90.4125,
+          text: 'OBLIQA IT Solutions'
+        }
+      ])
+      .labelLat('lat')
+      .labelLng('lng')
+      .labelText('text')
+      .labelSize(1.5)
+      .labelColor(() => 'orange')
+      .labelDotRadius(0.3)
+      .labelResolution(5)
 
     world.controls().autoRotate = true;
     world.controls().autoRotateSpeed = 0.7;
@@ -51,11 +65,11 @@ const GlobeViewer = () => {
   }, []);
 
   return (
-    <section className="bg-white py-12 ">
+    <section className="bg-white">
       <div className="mx-auto max-w-fit grid lg:grid-cols-2 grid-cols-1 justify-center gap-10 items-center">
         {/* Globe Container */}
         <motion.div
-          className="w-full lg:h-[600px] h-[400px] mx-5"
+          className="w-full h-[400px] lg:mx-5"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
@@ -72,16 +86,18 @@ const GlobeViewer = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <p className="flex items-center justify-items-start gap-2 text-4xl font-bold text-gray-800 ">
-            We Serve Clients Globally<span><GiWorld /></span>
+          <p className="flex items-center justify-items-start gap-2 text-2xl  lg:text-4xl font-bold text-gray-800">
+            We Serve Clients Globally<span className="text-orange-500"><GiWorld /></span>
           </p>
 
           <p className="text-base sm:text-xl text-black leading-relaxed">
-            From <span className="text-orange-500 font-semibold">Bangladesh</span>, we empower businesses worldwide<br></br> with fast,
-            reliable, and scalable digital solutions.
+            From <span className="text-orange-500 font-semibold">Bangladesh</span>, we empower businesses worldwide<br />
+            with fast, reliable, and scalable digital solutions.
           </p>
           <NavLink onClick={() => window.scrollTo(0, 0)} to={'/contact'}>
-          <button className='px-8 py-3 bg-[#f27f20] rounded-full font-semibold text-white bg-gradient-to-r hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl '>Get Your Service Now</button>
+            <button className="px-8 py-3 bg-[#f27f20] rounded-full font-semibold text-white bg-gradient-to-r hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl">
+              Get Your Service Now
+            </button>
           </NavLink>
         </motion.div>
       </div>
