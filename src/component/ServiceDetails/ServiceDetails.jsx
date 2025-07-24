@@ -83,7 +83,7 @@ const ServiceDetails = () => {
           Our Professional Services
         </motion.h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl">
           {services.map((service, index) => (
             <motion.div
               key={service.title}

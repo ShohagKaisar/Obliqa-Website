@@ -3,6 +3,7 @@ import GetInTouch from '../../shared/GetInTouch';
 import Video from '../../shared/Video';
 import ServiceDetails from '../ServiceDetails/ServiceDetails';
 import { motion } from "framer-motion";
+import TeamSection from '../TeamSection/TeamSection';
 
 const AboutObliqa = () => {
 
@@ -57,8 +58,11 @@ const AboutObliqa = () => {
       </section>
 
       {/* Services Section */}
-      <div className='px-4'>
+      <div className='px-4 flex items-center justify-center'>
         <ServiceDetails></ServiceDetails>
+      </div>
+      <div>
+        <TeamSection></TeamSection>
       </div>
       <GetInTouch></GetInTouch>
     </div>
