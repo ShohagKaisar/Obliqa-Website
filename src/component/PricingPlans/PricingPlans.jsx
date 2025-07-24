@@ -14,36 +14,36 @@ const plans = [
   },
   {
     name: "Starter",
-    priceBDT: "৳15,000",
-    priceUSD: "$135",
+    priceBDT: "৳25,000",
+    priceUSD: "$225",
     description: "Ideal for startups looking to get online.",
     features: ["3 Page Website", "Mobile Optimization", "Google Indexing", "Live Chat Setup"]
   },
   {
     name: "Growth",
-    priceBDT: "৳25,000",
-    priceUSD: "$225",
+    priceBDT: "৳45,000",
+    priceUSD: "$405",
     description: "Boost your brand's visibility and traffic.",
     features: ["5 Page Website", "Blog Integration", "SEO Optimization", "Google Analytics"]
   },
   {
     name: "Business",
-    priceBDT: "৳35,000",
-    priceUSD: "$315",
+    priceBDT: "৳65,000",
+    priceUSD: "$540",
     description: "Professional website with SEO for SMEs.",
     features: ["CMS Integration", "Newsletter & Lead Forms", "On-page SEO", "Facebook Pixel Setup"]
   },
   {
     name: "Premium",
-    priceBDT: "৳45,000",
-    priceUSD: "$405",
+    priceBDT: "৳100,000",
+    priceUSD: "$900",
     description: "Best for high-converting marketing sites.",
     features: ["Custom Design", "Advanced SEO", "Speed Optimization", "Digital Ads Integration"]
   },
   {
     name: "Enterprise",
-    priceBDT: "৳50,000",
-    priceUSD: "$450",
+    priceBDT: "৳150,000",
+    priceUSD: "$1350",
     description: "Complete digital ecosystem + consultancy.",
     features: ["Web App / Portal", "All Marketing Tools", "IT Strategy Consulting", "24/7 Dedicated Support"],
     isPopular: true

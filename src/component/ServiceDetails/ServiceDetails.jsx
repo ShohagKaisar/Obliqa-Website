@@ -11,7 +11,7 @@ const ServiceDetails = () => {
   const services = [
     {
       title: "Web Development",
-      description: "We build high-performance websites and web applications using modern technologies like Wordpress, React, Node.js, Expressjs and MongoDB.",
+      description: "We build fast, modern websites and web apps using WordPress, React, Node.js, Express, and MongoDB.",
       features: [
         "Custom web application development",
         "E-commerce solutions",

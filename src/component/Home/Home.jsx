@@ -11,7 +11,7 @@ import Map from '../Map/Map';
 
 const Home = () => {
   return (
-    <div>
+    <div className='bg-gray-50'>
       <Hero></Hero>
       <About></About>
       <GetStartedSection></GetStartedSection>

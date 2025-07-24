@@ -14,6 +14,7 @@ import ServiceDetails from './component/ServiceDetails/ServiceDetails.jsx';
 import WorkProcess from './component/WorkProcess/WorkProcess.jsx';
 import Testimonials from './component/Testimonials/Testimonials.jsx';
 import PricingPlans from './component/PricingPlans/PricingPlans.jsx';
+import ErrorPage from './component/ErrorPage/ErrorPage.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
         element: <PricingPlans></PricingPlans>
       },
     ]
+  },
+  {
+    path: '*',
+    element: <ErrorPage></ErrorPage>
   },
 ]);
 
