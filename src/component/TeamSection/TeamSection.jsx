@@ -83,7 +83,7 @@ const TeamSection = () => {
           ))}
         </div>
 
-        <div className="hidden lg:flex justify-center gap-8 mt-6">
+        <div className="hidden lg:flex justify-center gap-8 mt-12">
           {teamMembers.slice(3).map((member, index) => (
             <motion.div
               key={index + 3}
