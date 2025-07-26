@@ -67,9 +67,9 @@ const TeamSection = () => {
               variants={cardVariant}
             >
               {/* Watermark */}
-              <div className="absolute top-28 right-2 text-xs text-[#ff6900]/20 font-bold rotate-[-10deg] pointer-events-none select-none">
+              {/* <div className="absolute top-28 right-2 text-xs text-[#ff6900]/20 font-bold rotate-[-10deg] pointer-events-none select-none">
                 <img className="opacity-20" src={logo} alt="" />
-              </div>
+              </div> */}
 
               <img
                 src={member.image}
@@ -83,7 +83,7 @@ const TeamSection = () => {
           ))}
         </div>
 
-        <div className="hidden lg:flex justify-center gap-8 mt-12">
+        <div className="hidden lg:flex justify-center gap-12 mt-12">
           {teamMembers.slice(3).map((member, index) => (
             <motion.div
               key={index + 3}
@@ -95,9 +95,9 @@ const TeamSection = () => {
               variants={cardVariant}
             >
               {/* Watermark */}
-              <div className="absolute top-28 right-2 text-xs text-[#ff6900]/20 font-bold rotate-[-10deg] pointer-events-none select-none">
+              {/* <div className="absolute top-28 right-2 text-xs text-[#ff6900]/20 font-bold rotate-[-10deg] pointer-events-none select-none">
                 <img className="opacity-20" src={logo} alt="" />
-              </div>
+              </div> */}
 
               <img
                 src={member.image}

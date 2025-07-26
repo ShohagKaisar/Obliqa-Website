@@ -73,7 +73,7 @@ const ServiceDetails = () => {
   };
 
   return (
-    <div className="bg-gray-50 mx-4 lg:mx-24 py-8 px-4 mt-20">
+    <div className="bg-gray-50 mx-4 lg:mx-24 py-6 mt-12">
       <div className="mx-auto">
         <motion.h1
           initial={{ opacity: 0 }}
@@ -94,7 +94,7 @@ const ServiceDetails = () => {
               className="bg-white rounded-lg shadow-md overflow-hidden"
             >
               <div className={`h-2 bg-gradient-to-r ${service.color}`}></div>
-              <div className="p-2 lg:p-6">
+              <div className="p-6 lg:p-8">
                 <div className="flex items-center mb-4">
                   <span className="text-2xl mr-3">{service.icon}</span>
                   <h2 className="text-2xl font-semibold text-gray-800">{service.title}</h2>
