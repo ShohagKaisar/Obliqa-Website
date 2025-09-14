@@ -1,19 +1,4 @@
-[{
-  "id": 1,
-  "title": "Food Share Point",
-  "description": "Food Share Point is a platform to donate extra food for free to those in need. Reduce waste, fight hunger, and share with your community — one meal at a time.",
-  "technologies": [
-    "HTML",
-    "Tailwind CSS",
-    "React",
-    "Express.js",
-    "MongoDB",
-    "Firebase",
-    "Nodejs"
-  ],
-  "image": "./Image/Project_Image/Food_Share_Point_Banner.jpg",
-  "link": "https://mshohagdev-food-share-point.netlify.app/availablefoods"
-},
+[
 {
   "id": 2,
   "title": "Movie Portal",
@@ -54,18 +39,6 @@
   ],
   "image": "./Image/Project_Image/BPL_Dream_Banner.jpg",
   "link": "https://mshohagbev-bpl-dream.netlify.app/"
-},
-{
-  "id": 5,
-  "title": "Gadget Haven",
-  "description": "Gadget Haven is an online e-commerce website offering the latest gadgets and tech accessories at great prices. Shop smart, fast, and easy!",
-  "technologies": [
-    "HTML",
-    "Tailwind CSS",
-    "React"
-  ],
-  "image": "./Image/Project_Image/Gadget_Haven_Banner.jpg",
-  "link": "https://mshohagdev-gadget-haven.netlify.app/"
 },
 {
   "id": 6,

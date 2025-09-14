@@ -7,7 +7,6 @@ import GetInTouch from '../../shared/GetInTouch';
 import WorkProcess from '../WorkProcess/WorkProcess';
 import PricingPlans from '../PricingPlans/PricingPlans';
 import GlobeViewer from '../../shared/GlobeViewer';
-import Map from '../Map/Map';
 
 const Home = () => {
   return (
