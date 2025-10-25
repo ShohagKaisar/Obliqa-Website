@@ -27,7 +27,7 @@ const Footer = () => {
             <a className="text-xl link text-md text-gray-300 link-hover">Terms & Conditions</a>
             <a className="text-xl link text-md text-gray-300 link-hover">Privacy Policy</a>
             <a className="text-xl link text-md text-gray-300 link-hover">Accessibility Statement</a>
-            <a className="text-xl link text-md text-gray-300 link-hover">Anti Slavery</a>
+            <a className="text-xl link text-md text-gray-300 link-hover">Ethics & Compliance</a>
           </div>
           <div className="flex flex-col space-y-2 mb-5">
             <h6 className="text-2xl font-bold mb-3 text-white uppercase tracking-wider">
@@ -36,7 +36,7 @@ const Footer = () => {
             <div className="text-gray-300 flex flex-col space-y-2 text-xl">
               <div className="link-hover"><NavLink to={'/'}>Home</NavLink></div>
               <div className="link-hover"><NavLink to={'/about'}>About</NavLink></div>
-              <div className="link-hover"><NavLink to={'/Services'}>Services</NavLink></div>
+              <div className="link-hover"><NavLink to={'/services'}>Services</NavLink></div>
               <div className="link-hover"><NavLink to={'/portfolio'}>Portfolio</NavLink></div>
               <div className="link-hover"><NavLink to={'/contact'}>Contact Us</NavLink></div>
             </div>
