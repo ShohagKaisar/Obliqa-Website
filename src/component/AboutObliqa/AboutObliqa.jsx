@@ -24,7 +24,7 @@ const AboutObliqa = () => {
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 1, ease: "easeOut" }}
   >
-    <h1 className="text-4xl lg:text-7xl font-bold">About OBLIQA IT Solution</h1>
+    <h1 className="text-4xl lg:text-7xl font-bold">About OBLIQA IT Solutions</h1>
     <p className="mt-4 text-md lg:text-xl max-w-xl mx-auto">
       Your trusted partner in web design, development, SEO, and digital marketing.
     </p>
@@ -35,7 +35,7 @@ const AboutObliqa = () => {
         <div className="container mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-bold my-6">About Us</h2>
           <p className="max-w-4xl mx-auto text-gray-600 text-justify">
-            At Obliqa IT Solution, we stand for excellence, faith, and innovation. As a startup company, we bring fresh ideas and a dynamic approach to the ever-evolving tech industry. We don’t just take on projects, we take our clients visions seriously, turning their ideas into success stories.
+            At Obliqa IT Solutions, we stand for excellence, faith, and innovation. As a startup company, we bring fresh ideas and a dynamic approach to the ever-evolving tech industry. We don’t just take on projects, we take our clients visions seriously, turning their ideas into success stories.
 
             Technology should empower businesses, not just support them. That’s why we go beyond coding. We strategize, innovate, and deliver solutions that truly make a difference. Whether it’s a small startup or a large enterprise, our expert development team is ready to build, scale, and optimize with cutting-edge technology.
 

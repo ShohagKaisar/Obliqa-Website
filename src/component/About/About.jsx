@@ -1,6 +1,5 @@
 import './about.css';
 import companyLogo from '../../assets/logo-about.svg'
-import { NavLink } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -24,14 +23,8 @@ const About = () => {
                 About
               </h1>
               <p className="py-6 text-justify text-[#717171]">
-                At Obliqa IT Solution, we stand for excellence, faith, and innovation. As a startup company, we bring fresh ideas and a dynamic approach to the ever-evolving tech industry. We don’t just take on projects, we take our clients visions seriously, turning their ideas into success stories. Technology should empower businesses, not just support them. That’s why we go beyond coding. We strategize, innovate, and deliver solutions that truly make a difference. Whether it’s a small startup or a large enterprise, our expert development team is ready to build, scale, and optimize with cutting-edge technology. But we’re not stopping here. Our mission is bigger. We aim to make Obliqa IT a globally recognized technology leader known for delivering solutions that redefine industries while keeping client satisfaction at the heart of everything we do. Let’s build the future together.
+                At Obliqa IT Solutions, we stand for excellence, faith, and innovation. As a startup company, we bring fresh ideas and a dynamic approach to the ever-evolving tech industry. We don’t just take on projects, we take our clients visions seriously, turning their ideas into success stories. Technology should empower businesses, not just support them. That’s why we go beyond coding. We strategize, innovate, and deliver solutions that truly make a difference. Whether it’s a small startup or a large enterprise, our expert development team is ready to build, scale, and optimize with cutting-edge technology. But we’re not stopping here. Our mission is bigger. We aim to make Obliqa IT a globally recognized technology leader known for delivering solutions that redefine industries while keeping client satisfaction at the heart of everything we do. Let’s build the future together.
               </p>
-              {/* <NavLink to={'/about'}>
-                <div className="flex items-center max-md:justify-center">
-                <button className="btn bg-[#28CB8B]  text-white text-xl">
-                  About OBLIQA
-                </button>
-              </div></NavLink> */}
 
             </div>
           </div>

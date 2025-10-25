@@ -18,7 +18,7 @@ const Header = () => {
           <div className="mx-auto px-4 py-3 flex justify-between items-center">
             {/* Logo */}
             <Link to="/">
-              <img src={companyLogo} alt="Company Logo" className="h-10" />
+              <img src={companyLogo} alt="Company Logo" className="h-12 font-bold" />
             </Link>
 
             {/* Desktop Menubar */}

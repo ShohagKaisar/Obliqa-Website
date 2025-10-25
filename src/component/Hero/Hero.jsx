@@ -79,7 +79,7 @@ const Hero = () => {
               variants={itemVariants}
             >
               <span className="text-white bg-clip-text bg-white">
-                OBLIQA IT Solution
+                OBLIQA IT Solutions
               </span>
             </motion.h1>
 

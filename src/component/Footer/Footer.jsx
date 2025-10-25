@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import companyLogo from "../../assets/logo.svg";
-import { TiSocialFacebook, TiSocialInstagram, TiSocialInstagramCircular, TiSocialLinkedin, TiSocialTwitter } from "react-icons/ti";
+import { TiSocialFacebook, TiSocialInstagram, TiSocialLinkedin } from "react-icons/ti";
 
 const Footer = () => {
   return (

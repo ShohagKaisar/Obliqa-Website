@@ -1,4 +1,4 @@
-import logo from "../../assets/OBLIQA (1).svg"
+
 import { motion } from "framer-motion";
 
 const TeamSection = () => {
