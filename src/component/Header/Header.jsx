@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import companyLogo from "../../assets/logo.svg";
-import Mobilemenu from "../MobileMenu/mobilemenu";
+import Mobilemenu from "../MobileMenu/Mobilemenu";
 import Menu from "../../shared/Menu";
 import { FaWhatsapp } from "react-icons/fa";
 

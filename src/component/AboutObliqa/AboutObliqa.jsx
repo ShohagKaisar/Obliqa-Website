@@ -1,4 +1,4 @@
-import about_video from '../../assets/video/about_video.mp4';
+import about_video from '../../assets/Video/about_video.mp4';
 import GetInTouch from '../../shared/GetInTouch';
 import Video from '../../shared/Video';
 import ServiceDetails from '../ServiceDetails/ServiceDetails';
