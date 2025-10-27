@@ -110,7 +110,7 @@ const PricingPlans = () => {
             )}
             <h3 className="text-2xl font-semibold text-gray-800 mb-2">{plan.name}</h3>
             <div className="text-xl font-bold text-orange-500 mb-1">
-              {plan.priceBDT} <span className="text-sm text-gray-500">({plan.priceUSD})</span>
+              {plan.priceUSD} <span className="text-sm text-gray-500">({plan.priceBDT})</span>
             </div>
             <p className="text-gray-600 mb-4">{plan.description}</p>
             <ul className="space-y-2 mb-6 text-left text-gray-700">
