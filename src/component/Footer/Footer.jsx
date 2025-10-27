@@ -28,6 +28,7 @@ const Footer = () => {
             <a className="text-xl link text-md text-gray-300 link-hover">Privacy Policy</a>
             <a className="text-xl link text-md text-gray-300 link-hover">Accessibility Statement</a>
             <a className="text-xl link text-md text-gray-300 link-hover">Ethics & Compliance</a>
+            <a className="text-xl link text-md text-gray-300 link-hover" href="https://bd.obliqa.com">OBLIQA Bangladesh</a>
           </div>
           <div className="flex flex-col space-y-2 mb-5">
             <h6 className="text-2xl font-bold mb-3 text-white uppercase tracking-wider">
