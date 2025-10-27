@@ -4,7 +4,7 @@ const WhyChoseUs = () => {
   return (
     <div>
       <div className="bg-white">
-        <div className="text-gray-800 sticky top-[110px] flex justify-center text-5xl max-md:text-4xl font-bold my-8 w-[90%] mx-auto">
+        <div className="text-gray-800 sticky top-[110px] flex justify-center text-5xl max-md:text-4xl font-bold py-8 w-[90%] mx-auto">
           <h1>Why Choose Us</h1>
         </div>
         <div className="whychooseus">

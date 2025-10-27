@@ -49,14 +49,14 @@ const WorkProcess = () => {
   ];
 
   return (
-    <section id="how_we_work" className="py-8 bg-[#F5F7FA]">
-      <div className="container mx-auto px-6 max-w-7xl">
+    <section id="how_we_work" className=" bg-[#F5F7FA]">
+      <div className="container mx-auto px-6 pb-1 max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true, margin: "-100px" }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <span className="text-sm font-semibold tracking-wider text-[#263238] uppercase">
             Our 6-Step Process

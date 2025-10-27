@@ -82,12 +82,12 @@ export default function GetStartedSection() {
   ];
 
   return (
-    <div id="get-started" className="pt-20 mx-auto px-4 py-2 sm:px-6 lg:px-8 bg-[#F5F7FA]">
+    <div id="get-started" className="pt-12 mx-auto px-4 pb-4 sm:px-6 lg:px-8 bg-[#F5F7FA]">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-center mb-8"
+        className="text-center mb-6"
       >
         <h2 className="text-4xl md:text-5xl py-3 font-bold bg-clip-text text-gray-800 bg-[#263238] mb-2">
           Start Your Journey
@@ -112,7 +112,6 @@ export default function GetStartedSection() {
               variants={cardVariants}
               className={`h-full ${section.color} rounded-xl shadow-md overflow-hidden text-white`}
             >
-
               <div className="p-8 h-full flex flex-col">
                 <div className="flex items-center mb-4">
                   <span className="w-10 ms-[-8px] mr-3"><img src={section.icon} alt="" /></span>
