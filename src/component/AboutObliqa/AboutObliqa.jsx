@@ -47,7 +47,7 @@ const AboutObliqa = () => {
       </section>
 
       {/* Mission Section */}
-      <section className="py-4 px-4">
+      <section className="pt-4 px-4">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl lg:text-5xl font-bold my-6">Our Mission</h2>
           <p className="max-w-4xl mx-auto text-gray-600 text-justify">

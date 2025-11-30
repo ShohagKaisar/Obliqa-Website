@@ -15,12 +15,12 @@ const TeamSection = () => {
       image: "/Image/Shohag.jpg",
       bio: "Tech Architect at OBLIQA IT, leading system design and innovation. Skilled in full-stack development and WordPress.",
     },
-    {
-      name: "Noman Ahmed Shuvon",
-      role: "Sr. Digital Marketing Expert",
-      image: "/Image/Shuvon.jpg",
-      bio: "Digital Marketing Expert with 5+ years’ experience in SEO, social media, and paid ads focused on growth and visibility.",
-    },
+    // {
+    //   name: "Noman Ahmed Shuvon",
+    //   role: "Sr. Digital Marketing Expert",
+    //   image: "/Image/Shuvon.jpg",
+    //   bio: "Digital Marketing Expert with 5+ years’ experience in SEO, social media, and paid ads focused on growth and visibility.",
+    // },
     {
       name: "Iftiaz Ahamed Evan",
       role: "Digital Marketing Expert",

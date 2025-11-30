@@ -73,7 +73,7 @@ const ServiceDetails = () => {
   };
 
   return (
-    <div className="bg-gray-50 mx-4 lg:mx-24 py-8 mt-24">
+    <div className="bg-gray-50 mx-4 lg:mx-24 py-8 mt-20">
       <div className="mx-auto">
         <motion.h1
           initial={{ opacity: 0 }}
