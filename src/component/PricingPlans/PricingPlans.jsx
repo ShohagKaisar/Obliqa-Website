@@ -7,43 +7,43 @@ import { NavLink } from "react-router-dom";
 const plans = [
   {
     name: "Basic",
-    priceBDT: "৳10,000",
-    priceUSD: "$90",
+    priceBDT: "৳20,000",
+    priceUSD: "$150",
     description: "Simple online presence for individuals.",
     features: ["1 Page Website", "Responsive Design", "Contact Form", "Basic SEO"]
   },
   {
     name: "Starter",
-    priceBDT: "৳25,000",
-    priceUSD: "$225",
+    priceBDT: "৳35,000",
+    priceUSD: "$275",
     description: "Ideal for startups looking to get online.",
     features: ["3 Page Website", "Mobile Optimization", "Google Indexing", "Live Chat Setup"]
   },
   {
     name: "Growth",
-    priceBDT: "৳45,000",
-    priceUSD: "$405",
+    priceBDT: "৳80,000",
+    priceUSD: "$615",
     description: "Boost your brand's visibility and traffic.",
     features: ["5 Page Website", "Blog Integration", "SEO Optimization", "Google Analytics"]
   },
   {
     name: "Business",
-    priceBDT: "৳65,000",
-    priceUSD: "$540",
+    priceBDT: "৳1,25,000",
+    priceUSD: "$960",
     description: "Professional website with SEO for SMEs.",
     features: ["CMS Integration", "Newsletter & Lead Forms", "On-page SEO", "Facebook Pixel Setup"]
   },
   {
     name: "Premium",
-    priceBDT: "৳100,000",
-    priceUSD: "$900",
+    priceBDT: "৳2,00,000",
+    priceUSD: "$1550",
     description: "Best for high-converting marketing sites.",
     features: ["Custom Design", "Advanced SEO", "Speed Optimization", "Digital Ads Integration"]
   },
   {
     name: "Enterprise",
-    priceBDT: "৳150,000",
-    priceUSD: "$1350",
+    priceBDT: "৳3,00,000",
+    priceUSD: "$2300",
     description: "Complete digital ecosystem + consultancy.",
     features: ["Web App / Portal", "All Marketing Tools", "IT Strategy Consulting", "24/7 Dedicated Support"],
     isPopular: true
