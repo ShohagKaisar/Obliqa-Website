@@ -7,12 +7,14 @@ import GetInTouch from '../../shared/GetInTouch';
 import WorkProcess from '../WorkProcess/WorkProcess';
 import PricingPlans from '../PricingPlans/PricingPlans';
 import GlobeViewer from '../../shared/GlobeViewer';
+import AgencyDifference from '../AgencyDifference/AgencyDifference';
 
 const Home = () => {
   return (
     <div className='bg-gray-50'>
       <Hero></Hero>
       <About></About>
+      <AgencyDifference></AgencyDifference>
       <GetStartedSection></GetStartedSection>
       <WorkProcess></WorkProcess>
       <WhyChoseUs></WhyChoseUs>

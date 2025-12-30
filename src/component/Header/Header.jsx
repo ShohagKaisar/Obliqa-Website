@@ -25,7 +25,7 @@ const Header = () => {
             <nav className="hidden lg:block">
               <Menu></Menu>
             </nav>
-            <a href="https://wa.me/message/RAFUAZZGUL4KF1" target="_blank" className="hidden lg:block mt-1"><button className="cursor-pointer hover:text-white hover:scale-110 duration-300 rounded-full text-orange-400 text-4xl"><FaWhatsapp /></button> </a>
+            <a href="https://wa.link/q16322" target="_blank" className="hidden lg:block mt-1"><button className="cursor-pointer hover:text-white hover:scale-110 duration-300 rounded-full text-orange-400 text-4xl"><FaWhatsapp /></button> </a>
 
             {/* Mobile Menu Button */}
             <Mobilemenu></Mobilemenu>
